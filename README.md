@@ -7,38 +7,78 @@
 ---
 # 推荐系统的概述及其技术架构
 
+- [2005]. [Toward the Next Generation of Recommender Systems A Survey of the State-of-the-Art and Possible Extensions](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Review/Toward%20the%20Next%20Generation%20of%20Recommender%20Systems%20A%20Survey%20of%20the%20State-of-the-Art%20and%20Possible%20Extensions.pdf) <br />
+2005年的state-of-the-art的推荐综述，按照content-based, CF, Hybrid的分类方法进行组织，并介绍了推荐引擎设计时需要关注的特性指标，内容非常全。
+
 - [Netflix公布个性化和推荐系统架构](http://www.infoq.com/cn/news/2013/04/netflix-ml-architecture "Netflix公布个性化和推荐系统架构") <br />
 介绍在Netflix中的推荐系统的技术架构，对于构建工业级的推荐系统具有很重要的意义。
 
-- [美团-旅游推荐系统的演进](https://tech.meituan.com/travel-recsys.html "旅游推荐系统的演进") <br />
+- [【美团】旅游推荐系统的演进](https://tech.meituan.com/travel-recsys.html "旅游推荐系统的演进") <br />
+
+
+- [深度学习在推荐领域的应用](http://geek.csdn.net/news/detail/200138 "深度学习在推荐领域的应用") <br />
+
+- [2017]. [Deep Learning based Recommender System : A Survey and New Perspectives](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Review/Deep%20Learning%20based%20Recommender%20System%20A%20Survey%20and%20New%20Perspectives.pdf)
+
+- [2017]. [Use of Deep Learning in Modern Recommendation System : A Summary of Recent Works](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Review/Use%20of%20Deep%20Learning%20in%20Modern%20Recommendation%20System%20A%20Summary%20of%20Recent%20Works.pdf)
 
 ---
 # 推荐系统中常用算法
 
 ## 1、协同过滤（collaborative filtering）
 
+- [2003]. [Amazon.com recommendations:Item-to-item collaborative filtering](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/Amazon.com%20recommendations%20Item-to-item%20collaborative%20filtering.pdf) <br />
+经典的亚马逊item-based算法的文章
+
+- [2005]. [A survey of collaborative filtering techniques](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/A%20survey%20of%20collaborative%20filtering%20techniques.pdf) <br />
+有关协同过滤的一篇综述，介绍了CF算法，所面临的一些挑战以及解决的方案，详细介绍了三种类型的CF算法：memory\_based,model\_based和hybrid，涉及到的问题以及解决方法在现今依旧值得借鉴。
+
+- [2009]. [Matrix factorization techniques for recommender systems]()
+
+
 - [2017]. [Two Decades of Recommender Systems at Amazon.com](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/Two%20Decades%20of%20Recommender%20Systems%20at%20Amazon.com.pdf) <br />
 介绍在Amazon.com中使用的item-based collaborative filtering（基于商品的协同过滤）算法的具体过程。
 
-## 2、FM
+## 2、LR
+
+- [2007]. [Predicting clicks: estimating the click-through rate for new ads](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/LR/Predicting%20clicks%20estimating%20the%20click-through%20rate%20for%20new%20ads.pdf)
+
+## 3、FM
 
 - [2010]. [Factorization Machines](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Factorization%20Machines/Factorization%20Machines.pdf)
 
 - [2010]. [Fast Context-aware Recommendations with Factorization Machines](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Factorization%20Machines/Fast%20Context-aware%20Recommendations%20with%20Factorization%20Machines.pdf)
 
-## 3、Deep Learning
+
+## 4、GBDT
+
+- [2014]. [Practical lessons from predicting clicks on ads at facebook](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/GBDT/Practical%20lessons%20from%20predicting%20clicks%20on%20ads%20at%20facebook.pdf)
+
+## 5、Deep Learning
+
+- [2015]. [AutoRec : Autoencoders Meet Collaborative Filtering](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/AutoRec%20Autoencoders%20Meet%20Collaborative%20Filtering.pdf) <br />
+利用AutoEncoder模型学习User的隐向量矩阵U与Item的隐向量矩阵V
 
 - [2016]. [Deep Neural Networks for YouTube Recommendations](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/Deep%20Neural%20Networks%20for%20YouTube%20Recommendations.pdf)
 
 - [2016]. [Wide & Deep Learning for Recommender Systems](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/Wide%20&%20Deep%20Learning%20for%20Recommender%20Systems.pdf)
 
+- [2016]. [Session-based recommendations with recurrent neural networks](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/Session-based%20recommendations%20with%20recurrent%20neural%20networks.pdf) <br />
+提出了利用RNN建模一个用户session间的点击序列，该方法完全利用用户在当前session里的反馈去做推荐，相比原依赖用户历史记录的推荐能在解决冷启动问题上更为简洁有效。
+
+- [2016]. [Personal Recommendation Using Deep Recurrent Neural Networks in NetEase](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/Personal%20Recommendation%20Using%20Deep%20Recurrent%20Neural%20Networks%20in%20NetEase.pdf)
+
 - [2017]. [DeepFM : A Factorization-Machine based Neural Network for CTR Prediction](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/DeepFM%20A%20Factorization-Machine%20based%20Neural%20Network%20for%20CTR%20Prediction.pdf)
 
-- [美团“猜你喜欢”深度学习排序模型实践](https://tech.meituan.com/recommend_dnn.html "美团“猜你喜欢”深度学习排序模型实践")
+- [【美团】美团“猜你喜欢”深度学习排序模型实践](https://tech.meituan.com/recommend_dnn.html "美团“猜你喜欢”深度学习排序模型实践")
 
-- [深度学习在美团点评推荐平台排序中的运用](https://tech.meituan.com/dl.html "深度学习在美团点评推荐平台排序中的运用")
+- [【美团】深度学习在美团点评推荐平台排序中的运用](https://tech.meituan.com/dl.html "深度学习在美团点评推荐平台排序中的运用")
+
+- [【携程】推荐系统中基于深度学习的混合协同过滤模型](https://zhuanlan.zhihu.com/p/25234865 "推荐系统中基于深度学习的混合协同过滤模型")
 
 ---
+
+# 其他相关算法
 
 
 
