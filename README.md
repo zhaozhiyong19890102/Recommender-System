@@ -13,6 +13,14 @@
 - [Netflix公布个性化和推荐系统架构](http://www.infoq.com/cn/news/2013/04/netflix-ml-architecture "Netflix公布个性化和推荐系统架构") <br />
 介绍在Netflix中的推荐系统的技术架构，对于构建工业级的推荐系统具有很重要的意义。
 
+- [Overview of Recommender Algorithms – Part 1](https://buildingrecommenders.wordpress.com/2015/11/16/overview-of-recommender-algorithms-part-1/ "Overview of Recommender Algorithms – Part 1")
+
+- [Overview of Recommender Algorithms – Part 2](https://buildingrecommenders.wordpress.com/2015/11/18/overview-of-recommender-algorithms-part-2/ "Overview of Recommender Algorithms – Part 2")
+
+- [Recommender Systems in Netflix](https://buildingrecommenders.wordpress.com/2015/11/18/recommender-systems-in-netflix/ "Recommender Systems in Netflix")
+
+- [推荐引擎初探](https://www.ibm.com/developerworks/cn/web/1103_zhaoct_recommstudy1/index.html#icomments "推荐引擎初探")
+
 - [【美团】旅游推荐系统的演进](https://tech.meituan.com/travel-recsys.html "旅游推荐系统的演进") <br />
 
 
@@ -27,6 +35,8 @@
 
 ## 1、协同过滤（collaborative filtering）
 
+- [2000]. [Application of Dimensionality Reduction in Recommender System -- A Case Study](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/Application%20of%20Dimensionality%20Reduction%20in%20Recommender%20System%20--%20A%20Case%20Study.pdf)
+
 - [2003]. [Amazon.com recommendations:Item-to-item collaborative filtering](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/Amazon.com%20recommendations%20Item-to-item%20collaborative%20filtering.pdf) <br />
 经典的亚马逊item-based算法的文章
 
@@ -35,9 +45,12 @@
 
 - [2009]. [Matrix factorization techniques for recommender systems]()
 
+- [2016]. [Local Item-Item Models for Top-N Recommendation](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/Local%20Item-Item%20Models%20for%20Top-N%20Recommendation.pdf)
 
 - [2017]. [Two Decades of Recommender Systems at Amazon.com](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/Two%20Decades%20of%20Recommender%20Systems%20at%20Amazon.com.pdf) <br />
 介绍在Amazon.com中使用的item-based collaborative filtering（基于商品的协同过滤）算法的具体过程。
+
+- [深入推荐引擎相关算法 - 协同过滤](https://www.ibm.com/developerworks/cn/web/1103_zhaoct_recommstudy2/index.html?ca=drs- "深入推荐引擎相关算法 - 协同过滤")
 
 ## 2、LR
 
@@ -54,7 +67,17 @@
 
 - [2014]. [Practical lessons from predicting clicks on ads at facebook](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/GBDT/Practical%20lessons%20from%20predicting%20clicks%20on%20ads%20at%20facebook.pdf)
 
-## 5、Deep Learning
+## 5、聚类算法
+
+- [深入推荐引擎相关算法 - 聚类](https://www.ibm.com/developerworks/cn/web/1103_zhaoct_recommstudy3/index.html?ca=drs- "深入推荐引擎相关算法 - 聚类")
+
+## 6、Deep Learning
+
+- [2007]. [Restricted Boltzmann Machines for Collaborative Filtering](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/Restricted%20Boltzmann%20Machines%20for%20Collaborative%20Filtering.pdf)
+
+- [2013]. [Learning deep structured semantic models for web search using clickthrough data](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/Learning%20deep%20structured%20semantic%20models%20for%20web%20search%20using%20clickthrough%20data.pdf)
+
+- [2015]. [A Multi-View Deep Learning Approach for Cross Domain User Modeling in Recommendation Systems](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/A%20Multi-View%20Deep%20Learning%20Approach%20for%20Cross%20Domain%20User%20Modeling%20in%20Recommendation%20Systems.pdf)
 
 - [2015]. [AutoRec : Autoencoders Meet Collaborative Filtering](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/AutoRec%20Autoencoders%20Meet%20Collaborative%20Filtering.pdf) <br />
 利用AutoEncoder模型学习User的隐向量矩阵U与Item的隐向量矩阵V
@@ -68,7 +91,15 @@
 
 - [2016]. [Personal Recommendation Using Deep Recurrent Neural Networks in NetEase](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/Personal%20Recommendation%20Using%20Deep%20Recurrent%20Neural%20Networks%20in%20NetEase.pdf)
 
+- [2016]. [Product-Based Neural Networks for User Response Prediction](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/Product-Based%20Neural%20Networks%20for%20User%20Response%20Prediction.pdf)
+
 - [2017]. [DeepFM : A Factorization-Machine based Neural Network for CTR Prediction](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/DeepFM%20A%20Factorization-Machine%20based%20Neural%20Network%20for%20CTR%20Prediction.pdf)
+
+- [2017]. [Deep & Cross Network for Ad Click Predictions](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/Deep%20&%20Cross%20Network%20for%20Ad%20Click%20Predictions.pdf)
+
+- [2017]. [Embedding-based News Recommendation for Millions of Users]()
+
+- [2017]. [Deep Interest Network for Click-Through Rate Prediction](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/Deep%20Interest%20Network%20for%20Click-Through%20Rate%20Prediction.pdf)
 
 - [【美团】美团“猜你喜欢”深度学习排序模型实践](https://tech.meituan.com/recommend_dnn.html "美团“猜你喜欢”深度学习排序模型实践")
 
