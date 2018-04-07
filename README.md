@@ -45,6 +45,8 @@
 
 - [2009]. [Matrix factorization techniques for recommender systems]()
 
+- [2010]. [Factor in the neighbors : Scalable and accurate collaborative filtering](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/Factor%20in%20the%20neighbors%20Scalable%20and%20accurate%20collaborative%20filtering.pdf)
+
 - [2016]. [Local Item-Item Models for Top-N Recommendation](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/Local%20Item-Item%20Models%20for%20Top-N%20Recommendation.pdf)
 
 - [2017]. [Two Decades of Recommender Systems at Amazon.com](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/Two%20Decades%20of%20Recommender%20Systems%20at%20Amazon.com.pdf) <br />
@@ -82,7 +84,11 @@
 - [2015]. [AutoRec : Autoencoders Meet Collaborative Filtering](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/AutoRec%20Autoencoders%20Meet%20Collaborative%20Filtering.pdf) <br />
 利用AutoEncoder模型学习User的隐向量矩阵U与Item的隐向量矩阵V
 
+- [2016]. [Collaborative Denoising Auto-Encoders for Top-N Recommender Systems](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/Collaborative%20Denoising%20Auto-Encoders%20for%20Top-N%20Recommender%20Systems.pdf)
+
 - [2016]. [Deep Neural Networks for YouTube Recommendations](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/Deep%20Neural%20Networks%20for%20YouTube%20Recommendations.pdf)
+
+- [2016]. [Item2vec : Neural Item Embedding for Collaborative Filtering](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/Item2vec%20Neural%20Item%20Embedding%20for%20Collaborative%20Filtering.pdf) <br />
 
 - [2016]. [Wide & Deep Learning for Recommender Systems](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/Wide%20&%20Deep%20Learning%20for%20Recommender%20Systems.pdf)
 
@@ -110,6 +116,8 @@
 ---
 
 # 其他相关算法
+
+# 开源的代码以及框架
 
 
 
