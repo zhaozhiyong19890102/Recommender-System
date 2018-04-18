@@ -38,7 +38,7 @@
 - [2000]. [Application of Dimensionality Reduction in Recommender System -- A Case Study](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/Application%20of%20Dimensionality%20Reduction%20in%20Recommender%20System%20--%20A%20Case%20Study.pdf)
 
 - [2003]. [Amazon.com recommendations:Item-to-item collaborative filtering](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/Amazon.com%20recommendations%20Item-to-item%20collaborative%20filtering.pdf) <br />
-经典的亚马逊item-based算法的文章
+经典的亚马逊item-based算法的文章。
 
 - [2005]. [A survey of collaborative filtering techniques](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/A%20survey%20of%20collaborative%20filtering%20techniques.pdf) <br />
 有关协同过滤的一篇综述，介绍了CF算法，所面临的一些挑战以及解决的方案，详细介绍了三种类型的CF算法：memory\_based,model\_based和hybrid，涉及到的问题以及解决方法在现今依旧值得借鉴。
@@ -50,9 +50,10 @@
 - [2016]. [Local Item-Item Models for Top-N Recommendation](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/Local%20Item-Item%20Models%20for%20Top-N%20Recommendation.pdf)
 
 - [2017]. [Two Decades of Recommender Systems at Amazon.com](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/Two%20Decades%20of%20Recommender%20Systems%20at%20Amazon.com.pdf) <br />
-介绍在Amazon.com中使用的item-based collaborative filtering（基于商品的协同过滤）算法的具体过程。
+介绍在Amazon.com中使用的item-based collaborative filtering（基于项的协同过滤）算法的具体过程。
 
-- [深入推荐引擎相关算法 - 协同过滤](https://www.ibm.com/developerworks/cn/web/1103_zhaoct_recommstudy2/index.html?ca=drs- "深入推荐引擎相关算法 - 协同过滤")
+- [深入推荐引擎相关算法 - 协同过滤](https://www.ibm.com/developerworks/cn/web/1103_zhaoct_recommstudy2/index.html?ca=drs- "深入推荐引擎相关算法 - 协同过滤") <br />
+详细介绍协同过滤算法（包括基于用户的协同过滤算法和基于项的协同过滤算法）的技术细节。
 
 ## 2、LR
 
