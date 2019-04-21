@@ -14,6 +14,9 @@
 - [2005]. [Toward the Next Generation of Recommender Systems A Survey of the State-of-the-Art and Possible Extensions](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Review/Toward%20the%20Next%20Generation%20of%20Recommender%20Systems%20A%20Survey%20of%20the%20State-of-the-Art%20and%20Possible%20Extensions.pdf) <br />
 2005年的state-of-the-art的推荐综述，按照content-based, CF, Hybrid的分类方法进行组织，并介绍了推荐引擎设计时需要关注的特性指标，内容非常全。
 
+- [2010]. [The YouTube video recommendation system](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/The%20YouTube%20video%20recommendation%20system.pdf) <br />
+2010年的YouTube的推荐系统的文章，文章中还没有涉及到高大上的算法，但是在文章中，值得我们借鉴的是对推荐系统的理解，包括产品的理念，数据的处理，系统的设计，是一篇值得学习的实践性的文章，建议认真研读。
+
 - [Netflix公布个性化和推荐系统架构](http://www.infoq.com/cn/news/2013/04/netflix-ml-architecture "Netflix公布个性化和推荐系统架构") <br />
 介绍在Netflix中的推荐系统的技术架构，对于构建工业级的推荐系统具有很重要的意义。
 
