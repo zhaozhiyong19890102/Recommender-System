@@ -28,7 +28,7 @@
 
 - [推荐引擎初探](https://www.ibm.com/developerworks/cn/web/1103_zhaoct_recommstudy1/index.html#icomments "推荐引擎初探")
 
-- [【美团】旅游推荐系统的演进](https://tech.meituan.com/travel-recsys.html "旅游推荐系统的演进") <br />
+- [【美团】旅游推荐系统的演进](https://tech.meituan.com/2017/03/24/travel-recsys.html) <br />
 
 
 - [深度学习在推荐领域的应用](http://geek.csdn.net/news/detail/200138 "深度学习在推荐领域的应用") <br />
