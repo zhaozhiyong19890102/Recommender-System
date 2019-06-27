@@ -8,8 +8,7 @@
 
 **(以下内容会持续更新)**
 
----
-# 推荐系统的概述及其技术架构
+# 1. 推荐系统的概述及其技术架构
 
 - [2005]. [Toward the Next Generation of Recommender Systems A Survey of the State-of-the-Art and Possible Extensions](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Review/Toward%20the%20Next%20Generation%20of%20Recommender%20Systems%20A%20Survey%20of%20the%20State-of-the-Art%20and%20Possible%20Extensions.pdf) <br />
 2005年的state-of-the-art的推荐综述，按照content-based, CF, Hybrid的分类方法进行组织，并介绍了推荐引擎设计时需要关注的特性指标，内容非常全。
@@ -34,18 +33,17 @@
 
 - [2017]. [Use of Deep Learning in Modern Recommendation System : A Summary of Recent Works](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Review/Use%20of%20Deep%20Learning%20in%20Modern%20Recommendation%20System%20A%20Summary%20of%20Recent%20Works.pdf)
 
----
-# 推荐系统中常用算法
+# 2. 推荐系统中的常用算法
 
-## 1、协同过滤（collaborative filtering）
+## 2.1. 协同过滤（collaborative filtering）
 
 - [2000]. [Application of Dimensionality Reduction in Recommender System -- A Case Study](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/Application%20of%20Dimensionality%20Reduction%20in%20Recommender%20System%20--%20A%20Case%20Study.pdf)
 
 - [2003]. [Amazon.com recommendations:Item-to-item collaborative filtering](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/Amazon.com%20recommendations%20Item-to-item%20collaborative%20filtering.pdf) <br />
-经典的亚马逊item-based算法的文章。
+  经典的亚马逊item-based算法的文章。
 
 - [2005]. [A survey of collaborative filtering techniques](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/A%20survey%20of%20collaborative%20filtering%20techniques.pdf) <br />
-有关协同过滤的一篇综述，介绍了CF算法，所面临的一些挑战以及解决的方案，详细介绍了三种类型的CF算法：memory\_based,model\_based和hybrid，涉及到的问题以及解决方法在现今依旧值得借鉴。
+  有关协同过滤的一篇综述，介绍了CF算法，所面临的一些挑战以及解决的方案，详细介绍了三种类型的CF算法：memory\_based,model\_based和hybrid，涉及到的问题以及解决方法在现今依旧值得借鉴。
 
 - [2009]. [Matrix factorization techniques for recommender systems]()
 
@@ -54,31 +52,31 @@
 - [2016]. [Local Item-Item Models for Top-N Recommendation](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/Local%20Item-Item%20Models%20for%20Top-N%20Recommendation.pdf)
 
 - [2017]. [Two Decades of Recommender Systems at Amazon.com](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/CF/Two%20Decades%20of%20Recommender%20Systems%20at%20Amazon.com.pdf) <br />
-介绍在Amazon.com中使用的item-based collaborative filtering（基于项的协同过滤）算法的具体过程。
+  介绍在Amazon.com中使用的item-based collaborative filtering（基于项的协同过滤）算法的具体过程。
 
 - [深入推荐引擎相关算法 - 协同过滤](https://www.ibm.com/developerworks/cn/web/1103_zhaoct_recommstudy2/index.html?ca=drs- "深入推荐引擎相关算法 - 协同过滤") <br />
-详细介绍协同过滤算法（包括基于用户的协同过滤算法和基于项的协同过滤算法）的技术细节。
+  详细介绍协同过滤算法（包括基于用户的协同过滤算法和基于项的协同过滤算法）的技术细节。
 
-## 2、LR
+## 2.2. LR
 
 - [2007]. [Predicting clicks: estimating the click-through rate for new ads](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/LR/Predicting%20clicks%20estimating%20the%20click-through%20rate%20for%20new%20ads.pdf)
 
-## 3、FM
+## 2.3. FM
 
 - [2010]. [Factorization Machines](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Factorization%20Machines/Factorization%20Machines.pdf)
 
 - [2010]. [Fast Context-aware Recommendations with Factorization Machines](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Factorization%20Machines/Fast%20Context-aware%20Recommendations%20with%20Factorization%20Machines.pdf)
 
 
-## 4、GBDT
+## 2.4. GBDT
 
 - [2014]. [Practical lessons from predicting clicks on ads at facebook](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/GBDT/Practical%20lessons%20from%20predicting%20clicks%20on%20ads%20at%20facebook.pdf)
 
-## 5、聚类算法
+## 2.5. 聚类算法
 
 - [深入推荐引擎相关算法 - 聚类](https://www.ibm.com/developerworks/cn/web/1103_zhaoct_recommstudy3/index.html?ca=drs- "深入推荐引擎相关算法 - 聚类")
 
-## 6、Deep Learning
+## 2.6. Deep Learning
 
 - [2007]. [Restricted Boltzmann Machines for Collaborative Filtering](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Deep%20Learning/Restricted%20Boltzmann%20Machines%20for%20Collaborative%20Filtering.pdf)
 
@@ -118,11 +116,17 @@
 
 - [【携程】推荐系统中基于深度学习的混合协同过滤模型](https://zhuanlan.zhihu.com/p/25234865 "推荐系统中基于深度学习的混合协同过滤模型")
 
----
+# 3. 内容结构化
 
-# 其他相关算法
+## 3.1. 文本相关
 
-# 开源的代码以及框架
+- [2014－文本分类]. [Convolutional Neural Networks for Sentence Classification](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/content_analysis/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification.pdf)
+
+  提出利用CNN模型解决文本分类的问题。
+
+## 3.2. 图像相关
+
+## 3.3. 视频相关
 
 
 
