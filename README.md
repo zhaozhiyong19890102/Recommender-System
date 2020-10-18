@@ -1,4 +1,4 @@
-> 对于文章内容的解读会逐渐迁移到个人网站**http://felixzhao.cn/**，欢迎大家关注
+> 对于文章内容的解读会逐渐迁移到个人网站**www.felixzhao.cn**
 
 # Recommender-System论文、学习资料以及业界分享
 
