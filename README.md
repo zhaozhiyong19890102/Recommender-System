@@ -1,4 +1,4 @@
-> 欢迎大家关注个人网站**www.felixzhao.cn**，其中的部分文章会收集到该网站中。
+> 欢迎大家关注个人网站**www.felixzhao.cn**
 
 # Recommender-System论文、学习资料以及业界分享
 
