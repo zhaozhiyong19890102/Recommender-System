@@ -113,6 +113,13 @@
 
 - [2014]. [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882)
   - 简介：CNN模型解决文本分类的问题
+  - 推荐指数：\* \* \* \*
+  - 阅读笔记：[CNN在文本建模中的应用TextCNN](http://felixzhao.cn/Articles/article/12)
+
+- [2016]. [Bag of Tricks for Efficient Text Classification](https://arxiv.org/pdf/1607.01759.pdf)
+  - 简介：文本分类工具FastText的文章，FastText在当前的文本分类任务中依旧是很好的工具
+  - 推荐指数：\* \* \* \*
+  - 阅读笔记：[文本分类fastText算法解析](http://felixzhao.cn/Articles/article/13)
 
 # 4. 架构工程实践
 
