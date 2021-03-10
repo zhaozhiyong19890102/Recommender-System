@@ -42,20 +42,23 @@
 
 # 2. 召回排序算法
 
-- [2000]. [Application of Dimensionality Reduction in Recommender System -- A Case Study]()
-- [2003]. [Amazon.com recommendations:Item-to-item collaborative filtering]()
+- [2000]. Application of Dimensionality Reduction in Recommender System -- A Case Study
+- [2003]. Amazon.com recommendations:Item-to-item collaborative filtering
   - 简介：经典的亚马逊item-based算法的文章
-- [2007]. [Predicting clicks: estimating the click-through rate for new ads]()
+- [2007]. Predicting clicks: estimating the click-through rate for new ads
   - 简介：LR算法应用于CTR问题
   - 推荐指数：\* \* \* \* \*
-- [2010]. [Factorization Machines]()
+- [2010]. Factorization Machines
   - 简介：FM算法在CTR中的应用
   - 推荐指数：\* \* \* \* \*
-- [2010]. [Fast Context-aware Recommendations with Factorization Machines]()
-- [2013]. [Learning deep structured semantic models for web search using clickthrough data]()
+- [2010]. Fast Context-aware Recommendations with Factorization Machines
+- [2013]. Learning deep structured semantic models for web search using clickthrough data
   - 简介：本文提出了DSSM模型，在原始论文中，最初是用于在搜索中计算用于是否点击的，现通常被应用在推荐中的相似性召回
   - 推荐指数：\* \* \* \* \*
   - 阅读笔记：[深度语义模型DSSM](http://felixzhao.cn/Articles/article/4)
+- [2013]. Ad Click Prediction: a View from the Trenches
+  - 简介：针对CTR预估中的大规模计算问题，提出FTRL在线优化算法，算法的理论性较强，同时是非常适合实际落地的方案
+  - 推荐指数：\* \* \* \* \*
 - [2014]. [Practical lessons from predicting clicks on ads at facebook](https://quinonero.net/Publications/predicting-clicks-facebook.pdf)
   - 简介：经典的GBDT+LR的解决方案，用于CTR预估，GBDT用于特征的处理，适合工业界落地的实践方案
   - 推荐指数：\* \* \* \* \*
@@ -66,10 +69,14 @@
   - 简介：经典的Wide & Deep网络结构，综合了记忆和泛化的能力，wide侧偏重记忆，deep侧偏重泛化；同时是一种适合工业界落地的深度学习方案
   - 推荐指数：\* \* \* \* \*
 - [2016]. [Deep Crossing: Web-Scale Modeling without Manually Crafted Combinatorial Features](https://www.kdd.org/kdd2016/subtopic/view/deep-crossing-web-scale-modeling-without-manually-crafted-combinatorial-fea)
+- [2016]. Product-based Neural Networks for User Response Prediction
+  - 简介：为解决DNN不能有效处理高维特征，且方便处理交叉特征，文章中提出PNN网络结构，利用embedding层处理高维特征，增加product层处理特征交叉
+  - 推荐指数：\* \* \* \* \*
 - [2017]. [DeepFM : A Factorization-Machine based Neural Network for CTR Prediction](https://arxiv.org/abs/1703.04247)
-  - DeepFM在Wide&Deep的基础上引入了交叉特征，使得模型能够更好的学习到组合特征
+  - 简介：DeepFM在Wide&Deep的基础上引入了交叉特征，使得模型能够更好的学习到组合特征
   - 推荐指数：\* \* \* \* \*
 - [2017]. [Deep & Cross Network for Ad Click Predictions](https://arxiv.org/abs/1708.05123)
+  - 简介：
 - [2018]. [Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1803.02349)
   - 简介：阿里提出的基于Graph Embedding的item的Embedding方案，相比传统的node2vec，通过增加side information解决冷启动的问题
   - 推荐指数：\* \* \* \*
@@ -78,7 +85,10 @@
 - [2018]. [Deep Interest Network for Click-Through Rate Prediction](https://arxiv.org/abs/1706.06978)
 - [2018]. [Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate](https://arxiv.org/abs/1804.07931)
   - 简介：为解决在CVR建模过程中的样本选择以及数据稀疏问题，提出ESMM（Entire Space Multi-task Model）算法，通过在全空间上直接对CVR建模，以及利用transfer learning的策略进行特征表示
-  - 推荐指数：* * * * *
+  - 推荐指数：\* \* \* \* \*
+- [2018]. Learning Tree-based Deep Model for Recommender Systems
+  - 简介：基于向量内积的召回方式计算量较大，为解决计算量的问题，文中提出TDM模型，用树模型构建用户兴趣
+  - 推荐指数：\* \* \* \*
 - [2019]. [SDM:Sequential Deep Matching Model for Online Large-scale Recommender System](https://arxiv.org/pdf/1909.00385.pdf)
   - 简介：分别对用户长期和短期兴趣建模，学习到用户的长期兴趣和短期兴趣
   - 推荐指数：* * * *
@@ -94,7 +104,10 @@
 - [2019]. [Deep Interest Evolution Network for Click-Through Rate Prediction](https://arxiv.org/abs/1809.03672)
 - [2019]. [Deep Learning Recommendation Model for Personalization and Recommendation Systems](https://arxiv.org/abs/1906.00091v1)
   - 简介：Facebook关于深度学习在推荐系统中落地的文章，文中提出DLRM模型，模型上重点在稀疏特征和稠密特征的处理上，同时对于如何在实践中落地提出了解决的方案
-  - 推荐指数：* * * * *
+  - 推荐指数：\* \* \* \* \*
+- [2019]. Recommending What Video to Watch Next: A Multitask Ranking System
+  - 简介：多目标优化是推荐系统中一个重要的研究方向，文章为解决多目标提出Multi-gate Mixture-of-Experts，以及为解决选择偏差的问题，提出对应的解决方案
+  - 推荐指数：\* \* \* \* \*
 - [2020]. [Controllable Multi-Interest Framework for Recommendation](https://arxiv.org/abs/2005.09347?context=cs.LG)
 
 # 3. 内容理解
@@ -103,11 +116,13 @@
   - 简介：CNN模型解决文本分类的问题
   - 推荐指数：\* \* \* \*
   - 阅读笔记：[CNN在文本建模中的应用TextCNN](http://felixzhao.cn/Articles/article/12)
-
 - [2016]. [Bag of Tricks for Efficient Text Classification](https://arxiv.org/pdf/1607.01759.pdf)
   - 简介：文本分类工具FastText的文章，FastText在当前的文本分类任务中依旧是很好的工具
   - 推荐指数：\* \* \* \*
   - 阅读笔记：[文本分类fastText算法解析](http://felixzhao.cn/Articles/article/13)
+- [2017]. Attention Is All You Need
+  - 简介：Attention的经典文章
+  - 推荐指数：\* \* \* \* \*
 
 # 4. 架构工程实践
 
