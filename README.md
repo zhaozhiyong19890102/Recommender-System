@@ -2,7 +2,7 @@
 
 # Recommender-System论文、学习资料以及业界分享
 
-推荐系统（Recommender System）是机器学习应用较为成熟的方向之一，在工业界中，推荐系统也是大数据领域成功的应用之一。在一个较为完整的推荐系统中，不仅包含大家熟知的召回和排序两个阶段的常用算法之外，还会涉及到内容理解的部分的相关算法。除了算法之外，还涉及到大数据相关的处理技术以及工程实践，以下总结和整理以工业界的推荐系统为例，包含如下的几个部分：
+推荐系统（Recommender System）是机器学习应用较为成熟的方向之一，在工业界中，推荐系统也是大数据领域成功的应用之一。在一个较为完整的推荐系统中，不仅包含大家熟知的召回和排序两个阶段的常用算法之外，还会涉及到内容理解的部分的相关算法。除了算法之外，还涉及到大数据相关的处理技术以及工程实践。在实际的推荐系统中，通常与搜索中使用的技术互相借鉴，如下整理和总结了搜推中的一些核心技术，主要包含如下的几个部分：
 - 推荐系统的概述及其技术架构
 - 召回排序算法
 - 内容理解
@@ -77,6 +77,8 @@
   - 推荐指数：\* \* \* \* \*
 - [2017]. [Deep & Cross Network for Ad Click Predictions](https://arxiv.org/abs/1708.05123)
   - 简介：
+- [2017]. Learning Piece-wise Linear Models from Large Scale Data for Ad Click Prediction 
+- [2018]. [xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems](https://arxiv.org/abs/1803.05170)
 - [2018]. [Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1803.02349)
   - 简介：阿里提出的基于Graph Embedding的item的Embedding方案，相比传统的node2vec，通过增加side information解决冷启动的问题
   - 推荐指数：\* \* \* \*
@@ -108,7 +110,14 @@
 - [2019]. Recommending What Video to Watch Next: A Multitask Ranking System
   - 简介：多目标优化是推荐系统中一个重要的研究方向，文章为解决多目标提出Multi-gate Mixture-of-Experts，以及为解决选择偏差的问题，提出对应的解决方案
   - 推荐指数：\* \* \* \* \*
+- [2019]. Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction
+- [2019]. Deep Session Interest Network for Click-Through Rate Prediction
 - [2020]. [Controllable Multi-Interest Framework for Recommendation](https://arxiv.org/abs/2005.09347?context=cs.LG)
+- [2020]. Beyond Lexical: A Semantic Retrieval Framework for Textual SearchEngine
+  - 简介：知乎关于向量召回文章，主要用于长尾的query
+- [2020]. Towards Personalized and Semantic Retrieval: An End-to-EndSolution for E-commerce Search via Embedding Learning
+  - 简介：京东电商搜索关于个性化语义召回的文章，提出DPSR模型，用于解决两个方面的问题，第一是语义相关但非词匹配的召回问题，第二是个性化的召回
+- [2020]. Deep Retrieval: An End-to-End Learnable Structure Model for Large-Scale Recommendations
 
 # 3. 内容理解
 
