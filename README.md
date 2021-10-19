@@ -17,8 +17,9 @@
   - 简介：据说是推荐系统的必读文章，2005年的state-of-the-art的推荐综述，按照content-based, CF, Hybrid的分类方法进行组织，并介绍了推荐引擎设计时需要关注的特性指标，内容非常全。
 
 - [2010]. [The YouTube video recommendation system](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/The%20YouTube%20video%20recommendation%20system.pdf)
-  - 简介：2010年的YouTube的推荐系统的文章，文章中还没有涉及到高大上的算法，但是在文章中，值得我们借鉴的是对推荐系统的理解，包括产品的理念，数据的处理，系统的设计，是一篇值得学习的实践性的文章，建议认真研读。
-
+  - 简介：2010年的YouTube的推荐系统的文章，文章中还没有涉及到高大上的算法，但是在文章中，值得我们借鉴的是对推荐系统的理解，包括产品的理念，数据的处理，系统的设计，初学者可以通过这篇文本对推荐系统有一个大概的认识。
+- 推荐指数：\* \* \*
+  
 - [Netflix公布个性化和推荐系统架构](http://www.infoq.com/cn/news/2013/04/netflix-ml-architecture "Netflix公布个性化和推荐系统架构")
   - 简介：介绍在Netflix中的推荐系统的技术架构，对于构建工业级的推荐系统具有很重要的意义。
 
@@ -62,6 +63,9 @@
 - [2014]. [Practical lessons from predicting clicks on ads at facebook](https://quinonero.net/Publications/predicting-clicks-facebook.pdf)
   - 简介：经典的GBDT+LR的解决方案，用于CTR预估，GBDT用于特征的处理，适合工业界落地的实践方案
   - 推荐指数：\* \* \* \* \*
+- [2016]. [node2vec: Scalable Feature Learning for Networks](https://arxiv.org/abs/1607.00653)
+  - 简介：节点向量表示的一种方法，在推荐系统中的每一个item，都可以通过用户行为转换成图的表示，通过node2vec的方法，学习到图中每一个节点的向量表示，从而能够通过向量的距离度量不同节点之间的相似度
+  - 推荐指数：\* \* \* \*
 - [2016]. [Deep Neural Networks for YouTube Recommendations](https://www.researchgate.net/publication/307573656_Deep_Neural_Networks_for_YouTube_Recommendations)
   - 简介：经典的深度学习方案在YouTube上的实践，同时包含深度学习在召回和排序过程中的应用，非常值得学习
   - 推荐指数：\* \* \* \* \*
@@ -69,7 +73,9 @@
   - 简介：经典的Wide & Deep网络结构，综合了记忆和泛化的能力，wide侧偏重记忆，deep侧偏重泛化；同时是一种适合工业界落地的深度学习方案
   - 推荐指数：\* \* \* \* \*
 - [2016]. [Deep Crossing: Web-Scale Modeling without Manually Crafted Combinatorial Features](https://www.kdd.org/kdd2016/subtopic/view/deep-crossing-web-scale-modeling-without-manually-crafted-combinatorial-fea)
-- [2016]. Product-based Neural Networks for User Response Prediction
+  - 简介：较为经典的深度学习在CTR问题上的应用，网络结构上与传统的MLP没有特别大的差别，唯一的区别是在MLP的计算中增加了残差的计算
+  - 推荐指数：\* \* \* \* \*
+- [2016]. [Product-based Neural Networks for User Response Prediction](https://arxiv.org/abs/1611.00144)
   - 简介：为解决DNN不能有效处理高维特征，且方便处理交叉特征，文章中提出PNN网络结构，利用embedding层处理高维特征，增加product层处理特征交叉
   - 推荐指数：\* \* \* \* \*
 - [2017]. [DeepFM : A Factorization-Machine based Neural Network for CTR Prediction](https://arxiv.org/abs/1703.04247)
@@ -77,7 +83,9 @@
   - 推荐指数：\* \* \* \* \*
 - [2017]. [Deep & Cross Network for Ad Click Predictions](https://arxiv.org/abs/1708.05123)
   - 简介：
-- [2017]. Learning Piece-wise Linear Models from Large Scale Data for Ad Click Prediction 
+- [2017]. Learning Piece-wise Linear Models from Large Scale Data for Ad Click Prediction
+- [2017]. [Attentional Factorization Machines: Learning the Weight of Feature Interactions via Attention Networks](https://arxiv.org/abs/1708.04617)
+  - 简介：
 - [2018]. [xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems](https://arxiv.org/abs/1803.05170)
 - [2018]. [Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1803.02349)
   - 简介：阿里提出的基于Graph Embedding的item的Embedding方案，相比传统的node2vec，通过增加side information解决冷启动的问题
@@ -112,12 +120,17 @@
   - 推荐指数：\* \* \* \* \*
 - [2019]. Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction
 - [2019]. Deep Session Interest Network for Click-Through Rate Prediction
+- [2019]. [MOBIUS: Towards the Next Generation of Query-Ad Matching in Baidu's Sponsored Search](https://dl.acm.org/doi/abs/10.1145/3292500.3330651)
+  - 简介：对于搜索中的召回来说，召回的相关性以及召回的效率（如点击率或者转化率）都重要，文中提出在以效率为目标的前提下训练召回模型，为防止相关性漂移，在训练的过程中以相关性作为teacher进行active learning
 - [2020]. [Controllable Multi-Interest Framework for Recommendation](https://arxiv.org/abs/2005.09347?context=cs.LG)
 - [2020]. Beyond Lexical: A Semantic Retrieval Framework for Textual SearchEngine
   - 简介：知乎关于向量召回文章，主要用于长尾的query
 - [2020]. Towards Personalized and Semantic Retrieval: An End-to-EndSolution for E-commerce Search via Embedding Learning
   - 简介：京东电商搜索关于个性化语义召回的文章，提出DPSR模型，用于解决两个方面的问题，第一是语义相关但非词匹配的召回问题，第二是个性化的召回
 - [2020]. Deep Retrieval: An End-to-End Learnable Structure Model for Large-Scale Recommendations
+- [2020]. [Embedding-based Retrieval in Facebook Search](https://arxiv.org/abs/2006.11632)
+- [2020]. [FuxiCTR: An Open Benchmark for Click-Through Rate Prediction](https://arxiv.org/abs/2009.05794)
+  - 简介：对多种CTR模型的对比，包括浅层模型和深度模型，浅层模型包括LR，FM，FFM等，深度模型包括DNN，Wide&Deep，PNN等
 
 # 3. 内容理解
 
