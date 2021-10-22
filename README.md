@@ -99,6 +99,8 @@
 - [2018]. Learning Tree-based Deep Model for Recommender Systems
   - 简介：基于向量内积的召回方式计算量较大，为解决计算量的问题，文中提出TDM模型，用树模型构建用户兴趣
   - 推荐指数：\* \* \* \*
+- [2018]. [Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts](https://www.kdd.org/kdd2018/accepted-papers/view/modeling-task-relationships-in-multi-task-learning-with-multi-gate-mixture-)
+  - 简介：多任务模型的预测效果通常与任务之间的关系有关，文中提出**MMoE模型**，通过对任务之间的关系建模以达到多个目标函数以及任务之间关系的平衡
 - [2019]. [SDM:Sequential Deep Matching Model for Online Large-scale Recommender System](https://arxiv.org/pdf/1909.00385.pdf)
   - 简介：分别对用户长期和短期兴趣建模，学习到用户的长期兴趣和短期兴趣
   - 推荐指数：* * * *
@@ -113,9 +115,9 @@
   - 简介：实时Look-alike 算法在微信看一看中的应用
 - [2019]. [Deep Interest Evolution Network for Click-Through Rate Prediction](https://arxiv.org/abs/1809.03672)
 - [2019]. [Deep Learning Recommendation Model for Personalization and Recommendation Systems](https://arxiv.org/abs/1906.00091v1)
-  - 简介：Facebook关于深度学习在推荐系统中落地的文章，文中提出DLRM模型，模型上重点在稀疏特征和稠密特征的处理上，同时对于如何在实践中落地提出了解决的方案
+  - 简介：Facebook关于深度学习在推荐系统中落地的文章，文中提出**DLRM**模型，模型上重点在稀疏特征和稠密特征的处理上，同时对于如何在实践中落地提出了解决的方案
   - 推荐指数：\* \* \* \* \*
-- [2019]. Recommending What Video to Watch Next: A Multitask Ranking System
+- [2019]. [Recommending What Video to Watch Next: A Multitask Ranking System](https://dl.acm.org/doi/10.1145/3298689.3346997)
   - 简介：多目标优化是推荐系统中一个重要的研究方向，文章为解决多目标提出Multi-gate Mixture-of-Experts，以及为解决选择偏差的问题，提出对应的解决方案
   - 推荐指数：\* \* \* \* \*
 - [2019]. Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction
@@ -123,14 +125,23 @@
 - [2019]. [MOBIUS: Towards the Next Generation of Query-Ad Matching in Baidu's Sponsored Search](https://dl.acm.org/doi/abs/10.1145/3292500.3330651)
   - 简介：对于搜索中的召回来说，召回的相关性以及召回的效率（如点击率或者转化率）都重要，文中提出在以效率为目标的前提下训练召回模型，为防止相关性漂移，在训练的过程中以相关性作为teacher进行active learning
 - [2020]. [Controllable Multi-Interest Framework for Recommendation](https://arxiv.org/abs/2005.09347?context=cs.LG)
-- [2020]. Beyond Lexical: A Semantic Retrieval Framework for Textual SearchEngine
+- [2020]. [Beyond Lexical: A Semantic Retrieval Framework for Textual SearchEngine](https://arxiv.org/abs/2008.03917)
   - 简介：知乎关于向量召回文章，主要用于长尾的query
-- [2020]. Towards Personalized and Semantic Retrieval: An End-to-EndSolution for E-commerce Search via Embedding Learning
-  - 简介：京东电商搜索关于个性化语义召回的文章，提出DPSR模型，用于解决两个方面的问题，第一是语义相关但非词匹配的召回问题，第二是个性化的召回
-- [2020]. Deep Retrieval: An End-to-End Learnable Structure Model for Large-Scale Recommendations
+- [2020]. [Towards Personalized and Semantic Retrieval: An End-to-EndSolution for E-commerce Search via Embedding Learning](http://arxiv.org/abs/2006.02282)
+  - 简介：京东电商搜索关于个性化语义召回的文章，提出**DPSR**模型，用于解决两个方面的问题，第一是语义相关但非词匹配的召回问题，第二是个性化的召回
+- [2020]. Deep Retrieval: An End-to-End Learnable Structure Model for Large-Scale Recommendations 
 - [2020]. [Embedding-based Retrieval in Facebook Search](https://arxiv.org/abs/2006.11632)
+  - 简介：Facebook搜索中充分利用用户的上下文信息训练向量召回模型为用户提供相关的结果
 - [2020]. [FuxiCTR: An Open Benchmark for Click-Through Rate Prediction](https://arxiv.org/abs/2009.05794)
   - 简介：对多种CTR模型的对比，包括浅层模型和深度模型，浅层模型包括LR，FM，FFM等，深度模型包括DNN，Wide&Deep，PNN等
+- [2020]. [A Comparison of Supervised Learning to Match Methods for Product Search](https://arxiv.org/abs/2007.10296)
+  - 简介：商品搜索中多种Learning to Match方法的对比
+- [2020]. [Beyond Lexical:A semantic Retrieval Framework for Textual Search Engine](https://arxiv.org/abs/2008.03917)
+  - 简介：知乎关于向量召回在搜索中的应用
+- [2020]. [COLD: Towards the Next Generation of Pre-Ranking System](https://arxiv.org/abs/2007.16122v1)
+  - 简介：长期以来，粗排（pre-ranking）一直被认为是精排（ranking）的简化版本，这就导致系统会陷入局部最优，文中提出COLD同时优化粗排模型和计算效率
+- [2021]. [Que2Search: Fast and Accurate Query and Document Understanding for Search at Facebook](https://dl.acm.org/doi/abs/10.1145/3447548.3467127?casa_token=_lzmp_XyNlYAAAAA%3AGOrfD2dLCe30ucy1vkacYK85-5i2agy4oKoybzluibUck-JA56hxpIGvgBa_hchJTe9fE6Dx1-3-oGs)
+  - 简介：Facebook的一篇基于搜索中query和商品理解的文章，具有很强的实践性，文中介绍如何采用多任务和多模态的模型对query以及商品的表示，并涉及到query和商品理解的系统Que2Search的训练以及部署
 
 # 3. 内容理解
 
