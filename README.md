@@ -105,7 +105,6 @@
   - 简介：分别对用户长期和短期兴趣建模，学习到用户的长期兴趣和短期兴趣
   - 推荐指数：* * * *
   - 阅读笔记：[序列深度匹配SDM](http://felixzhao.cn/Articles/article/11)
-- [2019]. [Recommending What Video to Watch Next: A Multitask Ranking System](https://dl.acm.org/doi/10.1145/3298689.3346997)
 - [2019]. [Multi-Interest Network with Dynamic Routing for Recommendation at Tmall](https://arxiv.org/abs/1904.08030)
 - [2019]. [Behavior Sequence Transformer for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1905.06874v1)
   - 简介：利用Transformer对用户行为序列建模
