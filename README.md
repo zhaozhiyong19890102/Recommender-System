@@ -18,7 +18,7 @@
 
 - [2010]. [The YouTube video recommendation system](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/The%20YouTube%20video%20recommendation%20system.pdf)
   - 简介：2010年的YouTube的推荐系统的文章，文章中还没有涉及到高大上的算法，但是在文章中，值得我们借鉴的是对推荐系统的理解，包括产品的理念，数据的处理，系统的设计，初学者可以通过这篇文本对推荐系统有一个大概的认识。
-- 推荐指数：\* \* \*
+  - 推荐指数：\* \* \*
   
 - [Netflix公布个性化和推荐系统架构](http://www.infoq.com/cn/news/2013/04/netflix-ml-architecture "Netflix公布个性化和推荐系统架构")
   - 简介：介绍在Netflix中的推荐系统的技术架构，对于构建工业级的推荐系统具有很重要的意义。
@@ -58,10 +58,10 @@
   - 推荐指数：\* \* \* \* \*
   - 阅读笔记：[深度语义模型DSSM](http://felixzhao.cn/Articles/article/4)
 - [2013]. Ad Click Prediction: a View from the Trenches
-  - 简介：针对CTR预估中的大规模计算问题，提出FTRL在线优化算法，算法的理论性较强，同时是非常适合实际落地的方案
+  - 简介：针对CTR预估中的大规模计算问题，提出**FTRL在线优化算法**，算法的理论性较强，同时是非常适合实际落地的方案
   - 推荐指数：\* \* \* \* \*
 - [2014]. [Practical lessons from predicting clicks on ads at facebook](https://quinonero.net/Publications/predicting-clicks-facebook.pdf)
-  - 简介：经典的GBDT+LR的解决方案，用于CTR预估，GBDT用于特征的处理，适合工业界落地的实践方案
+  - 简介：经典的**GBDT+LR**的解决方案，用于CTR预估，GBDT用于特征的处理，适合工业界落地的实践方案
   - 推荐指数：\* \* \* \* \*
 - [2016]. [node2vec: Scalable Feature Learning for Networks](https://arxiv.org/abs/1607.00653)
   - 简介：节点向量表示的一种方法，在推荐系统中的每一个item，都可以通过用户行为转换成图的表示，通过node2vec的方法，学习到图中每一个节点的向量表示，从而能够通过向量的距离度量不同节点之间的相似度
@@ -69,9 +69,12 @@
 - [2016]. [Deep Neural Networks for YouTube Recommendations](https://www.researchgate.net/publication/307573656_Deep_Neural_Networks_for_YouTube_Recommendations)
   - 简介：经典的深度学习方案在YouTube上的实践，同时包含深度学习在召回和排序过程中的应用，非常值得学习
   - 推荐指数：\* \* \* \* \*
+  - 阅读笔记：
+    - [Youtube的DeepMatch模型](http://felixzhao.cn/Articles/article/15)
 - [2016]. [Wide & Deep Learning for Recommender Systems](https://arxiv.org/abs/1606.07792)
   - 简介：经典的Wide & Deep网络结构，综合了记忆和泛化的能力，wide侧偏重记忆，deep侧偏重泛化；同时是一种适合工业界落地的深度学习方案
   - 推荐指数：\* \* \* \* \*
+  - 阅读笔记：[Wide & Deep算法](http://felixzhao.cn/Articles/article/18)
 - [2016]. [Deep Crossing: Web-Scale Modeling without Manually Crafted Combinatorial Features](https://www.kdd.org/kdd2016/subtopic/view/deep-crossing-web-scale-modeling-without-manually-crafted-combinatorial-fea)
   - 简介：较为经典的深度学习在CTR问题上的应用，网络结构上与传统的MLP没有特别大的差别，唯一的区别是在MLP的计算中增加了残差的计算
   - 推荐指数：\* \* \* \* \*
@@ -82,7 +85,7 @@
   - 简介：DeepFM在Wide&Deep的基础上引入了交叉特征，使得模型能够更好的学习到组合特征
   - 推荐指数：\* \* \* \* \*
 - [2017]. [Deep & Cross Network for Ad Click Predictions](https://arxiv.org/abs/1708.05123)
-  - 简介：
+  - 简介：对Wide & Deep模型优化，将Wide & Deep模型中的Wide部分替换成Cross network，用于自动化特征交叉
 - [2017]. Learning Piece-wise Linear Models from Large Scale Data for Ad Click Prediction
 - [2017]. [Attentional Factorization Machines: Learning the Weight of Feature Interactions via Attention Networks](https://arxiv.org/abs/1708.04617)
   - 简介：
@@ -93,6 +96,7 @@
   - 阅读笔记：[基于Graph Embedding的GES和EGES](http://felixzhao.cn/Articles/article/8)
 - [2018]. [Real-time Personalization using Embeddings for Search Ranking at Airbnb](https://www.researchgate.net/publication/326503432_Real-time_Personalization_using_Embeddings_for_Search_Ranking_at_Airbnb)
 - [2018]. [Deep Interest Network for Click-Through Rate Prediction](https://arxiv.org/abs/1706.06978)
+  - 简介：根据用户的历史行为学习到的用于兴趣向量不再是固定不变的，文中提出**DIN**模型，利用local activation unit基于不同的候选学习出不同的用户兴趣
 - [2018]. [Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate](https://arxiv.org/abs/1804.07931)
   - 简介：为解决在CVR建模过程中的样本选择以及数据稀疏问题，提出ESMM（Entire Space Multi-task Model）算法，通过在全空间上直接对CVR建模，以及利用transfer learning的策略进行特征表示
   - 推荐指数：\* \* \* \* \*
@@ -113,6 +117,7 @@
 - [2019]. [Real-time Attention Based Look-alike Model for Recommender System](https://arxiv.org/abs/1906.05022)
   - 简介：实时Look-alike 算法在微信看一看中的应用
 - [2019]. [Deep Interest Evolution Network for Click-Through Rate Prediction](https://arxiv.org/abs/1809.03672)
+  - 简介：用于行为不再是孤立的，而是存在时序的关系，在DIN模型的基础上，文中提出**DIEN**模型，分别设计了兴趣抽取层和兴趣演化层对用户行为的时序关系建模
 - [2019]. [Deep Learning Recommendation Model for Personalization and Recommendation Systems](https://arxiv.org/abs/1906.00091v1)
   - 简介：Facebook关于深度学习在推荐系统中落地的文章，文中提出**DLRM**模型，模型上重点在稀疏特征和稠密特征的处理上，同时对于如何在实践中落地提出了解决的方案
   - 推荐指数：\* \* \* \* \*
@@ -144,6 +149,8 @@
 
 # 3. 内容理解
 
+## 3.1. NLP
+
 - [2014]. [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882)
   - 简介：CNN模型解决文本分类的问题
   - 推荐指数：\* \* \* \*
@@ -155,6 +162,10 @@
 - [2017]. Attention Is All You Need
   - 简介：Attention的经典文章
   - 推荐指数：\* \* \* \* \*
+
+## 3.2. CV
+
+
 
 # 4. 架构工程实践
 
