@@ -131,7 +131,7 @@
 - [2020]. [Controllable Multi-Interest Framework for Recommendation](https://arxiv.org/abs/2005.09347?context=cs.LG)
 - [2020]. [Beyond Lexical: A Semantic Retrieval Framework for Textual SearchEngine](https://arxiv.org/abs/2008.03917)
   - 简介：知乎关于向量召回文章，主要用于长尾的query
-- [2020]. [Towards Personalized and Semantic Retrieval: An End-to-EndSolution for E-commerce Search via Embedding Learning](http://arxiv.org/abs/2006.02282)
+- [2020]. [Towards Personalized and Semantic Retrieval: An End-to-End Solution for E-commerce Search via Embedding Learning](http://arxiv.org/abs/2006.02282)
   - 简介：京东电商搜索关于个性化语义召回的文章，提出**DPSR**模型，用于解决两个方面的问题，第一是语义相关但非词匹配的召回问题，第二是个性化的召回
 - [2020]. Deep Retrieval: An End-to-End Learnable Structure Model for Large-Scale Recommendations 
 - [2020]. [Embedding-based Retrieval in Facebook Search](https://arxiv.org/abs/2006.11632)
@@ -188,8 +188,10 @@
   - 推荐指数：\* \* \*
 
 - [2020]. [Embedding在腾讯应用宝的推荐实践](https://blog.csdn.net/Tencent_TEG/article/details/108090738)
-
-​                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-
-
-
+- [2020]. [京东电商搜索中的语义检索与商品排序](https://mp.weixin.qq.com/s?__biz=MzU1NTMyOTI4Mw==&mid=2247501196&idx=1&sn=978b373e1278c709fc53036614a240ab&chksm=fbd777e0cca0fef630da6ed55518775e22afba1e74cd2e09701e055533146f29c71876ba77c4&scene=27#wechat_redirect)
+- [2020]. [深度CTR预估模型在应用宝推荐系统中的探索](https://mp.weixin.qq.com/s/w9Y5yrF4gKPqNKhnMZEr-Q)
+- [2021]. [万物皆为向量：在线向量召回工程服务化实践](万物皆为向量：在线向量召回工程服务化实践)
+- [2021]. [爱奇艺搜索排序算法实践](https://zhuanlan.zhihu.com/p/394649477)
+- [2021]. [一矢多穿：多目标排序在爱奇艺短视频推荐中的应用](https://zhuanlan.zhihu.com/p/383891318)
+- [2021]. [千人万面奇妙自见：爱奇艺短视频推荐技术中多兴趣召回技术的演变](https://zhuanlan.zhihu.com/p/367305286)
+- [2021]. [如何提升链路目标一致性？爱奇艺短视频推荐之粗排模型优化历程](https://zhuanlan.zhihu.com/p/353737614)
