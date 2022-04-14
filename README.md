@@ -3,7 +3,7 @@
 # Recommender-System论文、学习资料以及业界分享
 
 推荐系统（Recommender System）是机器学习应用较为成熟的方向之一，在工业界中，推荐系统也是大数据领域成功的应用之一。在一个较为完整的推荐系统中，不仅包含大家熟知的召回和排序两个阶段的常用算法之外，还会涉及到内容理解的部分的相关算法。除了算法之外，还涉及到大数据相关的处理技术以及工程实践。在实际的推荐系统中，通常与搜索中使用的技术互相借鉴，如下整理和总结了搜推中的一些核心技术，主要包含如下的几个部分：
-- 推荐系统的概述及其技术架构
+- 搜索、推荐系统综述
 - 召回排序算法
 - 内容理解
 - 架构工程实践
@@ -11,7 +11,7 @@
 
 **(以下内容会持续更新)**
 
-# 1. 推荐系统的概述及其技术架构
+# 1. 搜索、推荐系统综述
 
 - [2005]. [Toward the Next Generation of Recommender Systems A Survey of the State-of-the-Art and Possible Extensions](https://ieeexplore.ieee.org/document/1423975)
   - 简介：据说是推荐系统的必读文章，2005年的state-of-the-art的推荐综述，按照content-based, CF, Hybrid的分类方法进行组织，并介绍了推荐引擎设计时需要关注的特性指标，内容非常全。
@@ -33,7 +33,7 @@
 
 - [深度学习在推荐领域的应用](http://geek.csdn.net/news/detail/200138 "深度学习在推荐领域的应用")
 
-- [2017]. [Deep Learning based Recommender System : A Survey and New Perspectives](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Review/Deep%20Learning%20based%20Recommender%20System%20A%20Survey%20and%20New%20Perspectives.pdf)
+- [2017]. [Deep Learning based Recommender System : A Survey and New Perspectives](https://arxiv.org/pdf/1707.07435.pdf)
 
 - [2017]. [Use of Deep Learning in Modern Recommendation System : A Summary of Recent Works](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Review/Use%20of%20Deep%20Learning%20in%20Modern%20Recommendation%20System%20A%20Summary%20of%20Recent%20Works.pdf)
 
@@ -43,9 +43,13 @@
 
 # 2. 召回排序算法
 
+## 2.1. 召回
+
+## 2.2. 排序
+
 - [2000]. Application of Dimensionality Reduction in Recommender System -- A Case Study
 - [2003]. Amazon.com recommendations:Item-to-item collaborative filtering
-  - 简介：经典的亚马逊item-based算法的文章
+  - 简介：亚马逊提出经典的item-based协同过滤算法
 - [2007]. Predicting clicks: estimating the click-through rate for new ads
   - 简介：LR算法应用于CTR问题
   - 推荐指数：\* \* \* \* \*
@@ -78,17 +82,24 @@
 - [2016]. [Deep Crossing: Web-Scale Modeling without Manually Crafted Combinatorial Features](https://www.kdd.org/kdd2016/subtopic/view/deep-crossing-web-scale-modeling-without-manually-crafted-combinatorial-fea)
   - 简介：较为经典的深度学习在CTR问题上的应用，网络结构上与传统的MLP没有特别大的差别，唯一的区别是在MLP的计算中增加了残差的计算
   - 推荐指数：\* \* \* \* \*
+  - 阅读笔记：[Deep Crossing](http://felixzhao.cn/Articles/article/23)
 - [2016]. [Product-based Neural Networks for User Response Prediction](https://arxiv.org/abs/1611.00144)
   - 简介：为解决DNN不能有效处理高维特征，且方便处理交叉特征，文章中提出PNN网络结构，利用embedding层处理高维特征，增加product层处理特征交叉
   - 推荐指数：\* \* \* \* \*
+  - 阅读笔记：[PNN网络（Product-based Neural Network）](http://felixzhao.cn/Articles/article/22)
+- [2016]. [Session-based Recommendations with Recurrent Neural Networks](https://arxiv.org/pdf/1511.06939.pdf)
 - [2017]. [DeepFM : A Factorization-Machine based Neural Network for CTR Prediction](https://arxiv.org/abs/1703.04247)
   - 简介：DeepFM在Wide&Deep的基础上引入了交叉特征，使得模型能够更好的学习到组合特征
   - 推荐指数：\* \* \* \* \*
+  - 阅读笔记：[DeepFM](http://felixzhao.cn/Articles/article/26)
 - [2017]. [Deep & Cross Network for Ad Click Predictions](https://arxiv.org/abs/1708.05123)
   - 简介：对Wide & Deep模型优化，将Wide & Deep模型中的Wide部分替换成Cross network，用于自动化特征交叉
+  - 推荐指数：\* \* \* \* \*
+  - 阅读笔记：[Deep&Cross Network（DCN）](http://felixzhao.cn/Articles/article/25)
 - [2017]. Learning Piece-wise Linear Models from Large Scale Data for Ad Click Prediction
 - [2017]. [Attentional Factorization Machines: Learning the Weight of Feature Interactions via Attention Networks](https://arxiv.org/abs/1708.04617)
   - 简介：
+- [2017]. [Item2Vec-Neural Item Embedding for Collaborative Filtering](https://arxiv.org/pdf/1603.04259.pdf)
 - [2018]. [xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems](https://arxiv.org/abs/1803.05170)
 - [2018]. [Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1803.02349)
   - 简介：阿里提出的基于Graph Embedding的item的Embedding方案，相比传统的node2vec，通过增加side information解决冷启动的问题
@@ -105,6 +116,13 @@
   - 推荐指数：\* \* \* \*
 - [2018]. [Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts](https://www.kdd.org/kdd2018/accepted-papers/view/modeling-task-relationships-in-multi-task-learning-with-multi-gate-mixture-)
   - 简介：多任务模型的预测效果通常与任务之间的关系有关，文中提出**MMoE模型**，通过对任务之间的关系建模以达到多个目标函数以及任务之间关系的平衡
+  - 推荐指数：\* \* \* \* \*
+  - 阅读笔记：[Multi-gate Mixture-of-Experts（MMoE）](http://felixzhao.cn/Articles/article/30)
+- [2018]. [Entire Space Multi-Task Model: An E ective Approach for Estimating Post-Click Conversion Rate](https://arxiv.org/pdf/1804.07931.pdf)
+- [2018]. [Explainable Recommendation via Multi-Task Learning in Opinionated Text Data](https://arxiv.org/pdf/1806.03568.pdf)
+- [2018]. [TEM: Tree-enhanced Embedding Model for Explainable Recommendation](http://staff.ustc.edu.cn/~hexn/papers/www18-tem.pdf)
+- [2018]. [Neural Attentional Rating Regression with Review-level Explanations](http://www.thuir.cn/group/~YQLiu/publications/WWW2018_CC.pdf)
+- [2019]. [Order-aware Embedding Neural Network for CTR Prediction](https://dl.acm.org/citation.cfm?id=3331332)
 - [2019]. [SDM:Sequential Deep Matching Model for Online Large-scale Recommender System](https://arxiv.org/pdf/1909.00385.pdf)
   - 简介：分别对用户长期和短期兴趣建模，学习到用户的长期兴趣和短期兴趣
   - 推荐指数：* * * *
@@ -128,6 +146,13 @@
 - [2019]. Deep Session Interest Network for Click-Through Rate Prediction
 - [2019]. [MOBIUS: Towards the Next Generation of Query-Ad Matching in Baidu's Sponsored Search](https://dl.acm.org/doi/abs/10.1145/3292500.3330651)
   - 简介：对于搜索中的召回来说，召回的相关性以及召回的效率（如点击率或者转化率）都重要，文中提出在以效率为目标的前提下训练召回模型，为防止相关性漂移，在训练的过程中以相关性作为teacher进行active learning
+- [2019]. [Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction](https://arxiv.org/abs/1904.04447)
+- [2019]. [Personalized Re-ranking for Recommendation](https://arxiv.org/pdf/1904.06813.pdf)
+- [2019]. [Interaction-aware Factorization Machines for Recommender Systems](https://arxiv.org/pdf/1902.09757.pdf)
+- [2019]. [Deep Semantic Matching for Amazon Product Search](https://wsdm2019-dapa.github.io/slides/05-YiweiSong.pdf)
+- [2020]. [Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations](https://dl.acm.org/doi/10.1145/3383313.3412236)
+  - 简介：多任务学习算法**Progressive Layered Extraction (PLE)**
+  - 推荐指数：\* \* \* \* \*
 - [2020]. [Controllable Multi-Interest Framework for Recommendation](https://arxiv.org/abs/2005.09347?context=cs.LG)
 - [2020]. [Beyond Lexical: A Semantic Retrieval Framework for Textual SearchEngine](https://arxiv.org/abs/2008.03917)
   - 简介：知乎关于向量召回文章，主要用于长尾的query
@@ -164,6 +189,10 @@
 - [2017]. Attention Is All You Need
   - 简介：Attention的经典文章
   - 推荐指数：\* \* \* \* \*
+- [2018]. Deep Contextualized Word Representations
+  - 简介：预训练模型ELMo
+  - 推荐指数：\* \* \* \*
+  - 阅读笔记：[Embeddings from Language Models（ELMo）](http://felixzhao.cn/Articles/article/29)
 
 ## 3.2. CV
 
