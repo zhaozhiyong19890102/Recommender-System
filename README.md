@@ -102,6 +102,9 @@
   - 推荐指数：\* \* \* \* \*
   - 阅读笔记：[PNN网络（Product-based Neural Network）](http://felixzhao.cn/Articles/article/22)
 - [2016]. [Session-based Recommendations with Recurrent Neural Networks](https://arxiv.org/pdf/1511.06939.pdf)
+  - 简介：通过GRU模型对用户的历史Session建模，属于对用户序列化建模的早期文章
+  - 推荐指数：\* \* \*
+  - 阅读笔记：[基于Session的推荐](http://felixzhao.cn/Articles/article/10)
 - [2017]. [DeepFM : A Factorization-Machine based Neural Network for CTR Prediction](https://arxiv.org/abs/1703.04247)
   - 简介：DeepFM在Wide&Deep的基础上引入了交叉特征，使得模型能够更好的学习到组合特征
   - 推荐指数：\* \* \* \* \*
