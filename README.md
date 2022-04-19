@@ -35,6 +35,32 @@
 
 ## 2.1. 召回
 
+- [2016]. [Deep Neural Networks for YouTube Recommendations](https://www.researchgate.net/publication/307573656_Deep_Neural_Networks_for_YouTube_Recommendations)
+  - 简介：经典的深度学习方案在YouTube上的实践，同时包含深度学习在召回和排序过程中的应用，非常值得学习
+  - 推荐指数：\* \* \* \* \*
+  - 阅读笔记：[Youtube的DeepMatch模型](http://felixzhao.cn/Articles/article/15)
+- [2018]. Learning Tree-based Deep Model for Recommender Systems
+  - 简介：基于向量内积的召回方式计算量较大，为解决计算量的问题，文中提出TDM模型，用树模型构建用户兴趣
+  - 推荐指数：\* \* \* \*
+- [2019]. [MOBIUS: Towards the Next Generation of Query-Ad Matching in Baidu's Sponsored Search](https://dl.acm.org/doi/abs/10.1145/3292500.3330651)
+  - 简介：对于搜索中的召回来说，召回的相关性以及召回的效率（如点击率或者转化率）都重要，文中提出在以效率为目标的前提下训练召回模型，为防止相关性漂移，在训练的过程中以相关性作为teacher进行active learning
+- [2019]. [Deep Semantic Matching for Amazon Product Search](https://wsdm2019-dapa.github.io/slides/05-YiweiSong.pdf)
+- [2020]. [Beyond Lexical: A Semantic Retrieval Framework for Textual SearchEngine](https://arxiv.org/abs/2008.03917)
+  - 简介：知乎关于向量召回文章，主要用于长尾的query
+- [2020]. [A Comparison of Supervised Learning to Match Methods for Product Search](https://arxiv.org/abs/2007.10296)
+  - 简介：商品搜索中多种Learning to Match方法的对比
+- [2020]. [Beyond Lexical:A semantic Retrieval Framework for Textual Search Engine](https://arxiv.org/abs/2008.03917)
+  - 简介：知乎关于向量召回在搜索中的应用
+- [2020]. [Towards Personalized and Semantic Retrieval: An End-to-End Solution for E-commerce Search via Embedding Learning](http://arxiv.org/abs/2006.02282)
+  - 简介：京东电商搜索关于个性化语义召回的文章，提出**DPSR**模型，用于解决两个方面的问题，第一是语义相关但非词匹配的召回问题，第二是个性化的召回
+- [2020]. Deep Retrieval: An End-to-End Learnable Structure Model for Large-Scale Recommendations 
+- [2020]. [Embedding-based Retrieval in Facebook Search](https://arxiv.org/abs/2006.11632)
+  - 简介：Facebook搜索中充分利用用户的上下文信息训练向量召回模型为用户提供相关的结果
+- [2021]. [Que2Search: Fast and Accurate Query and Document Understanding for Search at Facebook](https://dl.acm.org/doi/abs/10.1145/3447548.3467127?casa_token=_lzmp_XyNlYAAAAA%3AGOrfD2dLCe30ucy1vkacYK85-5i2agy4oKoybzluibUck-JA56hxpIGvgBa_hchJTe9fE6Dx1-3-oGs)
+  - 简介：Facebook的一篇基于搜索中query和商品理解的文章，具有很强的实践性，文中介绍如何采用多任务和多模态的模型对query以及商品的表示，并涉及到query和商品理解的系统Que2Search的训练以及部署
+- [2021]. [Embedding-based Product Retrieval in Taobao Search](http://www.researchgate.net/publication/351902997_Embedding_based_Product_Retrieval_in_Taobao_Search)
+  - 简介：在搜索召回过程中，较为重要的一个问题是如何保证召回的相关性，即召回的结果与查询的query之间是相关的。在文章提出**Multi-Grained Deep Semantic Product Retrieval（MGDSPR）**算法，从两个方面，分别解决两个问题：第一，训练和推断之间的不一致；第二，如何保证相关性。
+
 ## 2.2. 排序
 
 - [2000]. Application of Dimensionality Reduction in Recommender System -- A Case Study
@@ -63,7 +89,6 @@
 - [2016]. [Deep Neural Networks for YouTube Recommendations](https://www.researchgate.net/publication/307573656_Deep_Neural_Networks_for_YouTube_Recommendations)
   - 简介：经典的深度学习方案在YouTube上的实践，同时包含深度学习在召回和排序过程中的应用，非常值得学习
   - 推荐指数：\* \* \* \* \*
-  - 阅读笔记：[Youtube的DeepMatch模型](http://felixzhao.cn/Articles/article/15)
 - [2016]. [Wide & Deep Learning for Recommender Systems](https://arxiv.org/abs/1606.07792)
   - 简介：经典的Wide & Deep网络结构，综合了记忆和泛化的能力，wide侧偏重记忆，deep侧偏重泛化；同时是一种适合工业界落地的深度学习方案
   - 推荐指数：\* \* \* \* \*
@@ -100,9 +125,6 @@
 - [2018]. [Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate](https://arxiv.org/abs/1804.07931)
   - 简介：为解决在CVR建模过程中的样本选择以及数据稀疏问题，提出ESMM（Entire Space Multi-task Model）算法，通过在全空间上直接对CVR建模，以及利用transfer learning的策略进行特征表示
   - 推荐指数：\* \* \* \* \*
-- [2018]. Learning Tree-based Deep Model for Recommender Systems
-  - 简介：基于向量内积的召回方式计算量较大，为解决计算量的问题，文中提出TDM模型，用树模型构建用户兴趣
-  - 推荐指数：\* \* \* \*
 - [2018]. [Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts](https://www.kdd.org/kdd2018/accepted-papers/view/modeling-task-relationships-in-multi-task-learning-with-multi-gate-mixture-)
   - 简介：多任务模型的预测效果通常与任务之间的关系有关，文中提出**MMoE模型**，通过对任务之间的关系建模以达到多个目标函数以及任务之间关系的平衡
   - 推荐指数：\* \* \* \* \*
@@ -117,7 +139,7 @@
   - 推荐指数：* * * *
   - 阅读笔记：[序列深度匹配SDM](http://felixzhao.cn/Articles/article/11)
 - [2019]. [Multi-Interest Network with Dynamic Routing for Recommendation at Tmall](https://arxiv.org/abs/1904.08030)
-  - 简介：聚焦在用户的兴趣的建模，不同于传统的单个兴趣性凉，通过**multi-interest extractor**抽取用户的不同兴趣
+  - 简介：聚焦在用户的兴趣的建模，不同于传统的单个兴趣向量，通过**multi-interest extractor**抽取用户的不同兴趣
   - 推荐指数：\* \* \* \* \*
 - [2019]. [Behavior Sequence Transformer for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1905.06874v1)
   - 简介：利用Transformer对用户行为序列建模
@@ -135,35 +157,18 @@
   - 推荐指数：\* \* \* \* \*
 - [2019]. Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction
 - [2019]. Deep Session Interest Network for Click-Through Rate Prediction
-- [2019]. [MOBIUS: Towards the Next Generation of Query-Ad Matching in Baidu's Sponsored Search](https://dl.acm.org/doi/abs/10.1145/3292500.3330651)
-  - 简介：对于搜索中的召回来说，召回的相关性以及召回的效率（如点击率或者转化率）都重要，文中提出在以效率为目标的前提下训练召回模型，为防止相关性漂移，在训练的过程中以相关性作为teacher进行active learning
 - [2019]. [Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction](https://arxiv.org/abs/1904.04447)
 - [2019]. [Personalized Re-ranking for Recommendation](https://arxiv.org/pdf/1904.06813.pdf)
 - [2019]. [Interaction-aware Factorization Machines for Recommender Systems](https://arxiv.org/pdf/1902.09757.pdf)
-- [2019]. [Deep Semantic Matching for Amazon Product Search](https://wsdm2019-dapa.github.io/slides/05-YiweiSong.pdf)
 - [2020]. [Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations](https://dl.acm.org/doi/10.1145/3383313.3412236)
   - 简介：多任务学习算法**Progressive Layered Extraction (PLE)**
   - 推荐指数：\* \* \* \* \*
 - [2020]. [Controllable Multi-Interest Framework for Recommendation](https://arxiv.org/abs/2005.09347?context=cs.LG)
-- [2020]. [Beyond Lexical: A Semantic Retrieval Framework for Textual SearchEngine](https://arxiv.org/abs/2008.03917)
-  - 简介：知乎关于向量召回文章，主要用于长尾的query
-- [2020]. [Towards Personalized and Semantic Retrieval: An End-to-End Solution for E-commerce Search via Embedding Learning](http://arxiv.org/abs/2006.02282)
-  - 简介：京东电商搜索关于个性化语义召回的文章，提出**DPSR**模型，用于解决两个方面的问题，第一是语义相关但非词匹配的召回问题，第二是个性化的召回
-- [2020]. Deep Retrieval: An End-to-End Learnable Structure Model for Large-Scale Recommendations 
-- [2020]. [Embedding-based Retrieval in Facebook Search](https://arxiv.org/abs/2006.11632)
-  - 简介：Facebook搜索中充分利用用户的上下文信息训练向量召回模型为用户提供相关的结果
 - [2020]. [FuxiCTR: An Open Benchmark for Click-Through Rate Prediction](https://arxiv.org/abs/2009.05794)
   - 简介：对多种CTR模型的对比，包括浅层模型和深度模型，浅层模型包括LR，FM，FFM等，深度模型包括DNN，Wide&Deep，PNN等
-- [2020]. [A Comparison of Supervised Learning to Match Methods for Product Search](https://arxiv.org/abs/2007.10296)
-  - 简介：商品搜索中多种Learning to Match方法的对比
-- [2020]. [Beyond Lexical:A semantic Retrieval Framework for Textual Search Engine](https://arxiv.org/abs/2008.03917)
-  - 简介：知乎关于向量召回在搜索中的应用
 - [2020]. [COLD: Towards the Next Generation of Pre-Ranking System](https://arxiv.org/abs/2007.16122v1)
   - 简介：长期以来，粗排（pre-ranking）一直被认为是精排（ranking）的简化版本，这就导致系统会陷入局部最优，文中提出COLD同时优化粗排模型和计算效率
-- [2021]. [Que2Search: Fast and Accurate Query and Document Understanding for Search at Facebook](https://dl.acm.org/doi/abs/10.1145/3447548.3467127?casa_token=_lzmp_XyNlYAAAAA%3AGOrfD2dLCe30ucy1vkacYK85-5i2agy4oKoybzluibUck-JA56hxpIGvgBa_hchJTe9fE6Dx1-3-oGs)
-  - 简介：Facebook的一篇基于搜索中query和商品理解的文章，具有很强的实践性，文中介绍如何采用多任务和多模态的模型对query以及商品的表示，并涉及到query和商品理解的系统Que2Search的训练以及部署
-- [2021]. [Embedding-based Product Retrieval in Taobao Search](http://www.researchgate.net/publication/351902997_Embedding_based_Product_Retrieval_in_Taobao_Search)
-  - 简介：在搜索召回过程中，较为重要的一个问题是如何保证召回的相关性，即召回的结果与查询的query之间是相关的。在文章提出**Multi-Grained Deep Semantic Product Retrieval（MGDSPR）**算法，从两个方面，分别解决两个问题：第一，训练和推断之间的不一致；第二，如何保证相关性。
+
 
 # 3. 内容理解
 
@@ -186,7 +191,6 @@
   - 阅读笔记：[Embeddings from Language Models（ELMo）](http://felixzhao.cn/Articles/article/29)
 
 ## 3.2. CV
-
 
 
 # 4. 架构工程实践
