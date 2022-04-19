@@ -45,19 +45,17 @@
 - [2019]. [MOBIUS: Towards the Next Generation of Query-Ad Matching in Baidu's Sponsored Search](https://dl.acm.org/doi/abs/10.1145/3292500.3330651)
   - 简介：对于搜索中的召回来说，召回的相关性以及召回的效率（如点击率或者转化率）都重要，文中提出在以效率为目标的前提下训练召回模型，为防止相关性漂移，在训练的过程中以相关性作为teacher进行active learning
 - [2019]. [Deep Semantic Matching for Amazon Product Search](https://wsdm2019-dapa.github.io/slides/05-YiweiSong.pdf)
-- [2020]. [Beyond Lexical: A Semantic Retrieval Framework for Textual SearchEngine](https://arxiv.org/abs/2008.03917)
-  - 简介：知乎关于向量召回文章，主要用于长尾的query
 - [2020]. [A Comparison of Supervised Learning to Match Methods for Product Search](https://arxiv.org/abs/2007.10296)
   - 简介：商品搜索中多种Learning to Match方法的对比
 - [2020]. [Beyond Lexical:A semantic Retrieval Framework for Textual Search Engine](https://arxiv.org/abs/2008.03917)
-  - 简介：知乎关于向量召回在搜索中的应用
+  - 简介：【知乎】关于向量召回在搜索中的应用
 - [2020]. [Towards Personalized and Semantic Retrieval: An End-to-End Solution for E-commerce Search via Embedding Learning](http://arxiv.org/abs/2006.02282)
   - 简介：京东电商搜索关于个性化语义召回的文章，提出**DPSR**模型，用于解决两个方面的问题，第一是语义相关但非词匹配的召回问题，第二是个性化的召回
 - [2020]. Deep Retrieval: An End-to-End Learnable Structure Model for Large-Scale Recommendations 
 - [2020]. [Embedding-based Retrieval in Facebook Search](https://arxiv.org/abs/2006.11632)
   - 简介：Facebook搜索中充分利用用户的上下文信息训练向量召回模型为用户提供相关的结果
 - [2021]. [Que2Search: Fast and Accurate Query and Document Understanding for Search at Facebook](https://dl.acm.org/doi/abs/10.1145/3447548.3467127?casa_token=_lzmp_XyNlYAAAAA%3AGOrfD2dLCe30ucy1vkacYK85-5i2agy4oKoybzluibUck-JA56hxpIGvgBa_hchJTe9fE6Dx1-3-oGs)
-  - 简介：Facebook的一篇基于搜索中query和商品理解的文章，具有很强的实践性，文中介绍如何采用多任务和多模态的模型对query以及商品的表示，并涉及到query和商品理解的系统Que2Search的训练以及部署
+  - 简介：【Facebook】的一篇基于搜索中query和商品理解的文章，具有很强的实践性，文中介绍如何采用多任务和多模态的模型对query以及商品的表示，并涉及到query和商品理解的系统Que2Search的训练以及部署
 - [2021]. [Embedding-based Product Retrieval in Taobao Search](http://www.researchgate.net/publication/351902997_Embedding_based_Product_Retrieval_in_Taobao_Search)
   - 简介：在搜索召回过程中，较为重要的一个问题是如何保证召回的相关性，即召回的结果与查询的query之间是相关的。在文章提出**Multi-Grained Deep Semantic Product Retrieval（MGDSPR）**算法，从两个方面，分别解决两个问题：第一，训练和推断之间的不一致；第二，如何保证相关性。
 
