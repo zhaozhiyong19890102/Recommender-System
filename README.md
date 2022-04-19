@@ -63,8 +63,7 @@
 - [2016]. [Deep Neural Networks for YouTube Recommendations](https://www.researchgate.net/publication/307573656_Deep_Neural_Networks_for_YouTube_Recommendations)
   - 简介：经典的深度学习方案在YouTube上的实践，同时包含深度学习在召回和排序过程中的应用，非常值得学习
   - 推荐指数：\* \* \* \* \*
-  - 阅读笔记：
-    - [Youtube的DeepMatch模型](http://felixzhao.cn/Articles/article/15)
+  - 阅读笔记：[Youtube的DeepMatch模型](http://felixzhao.cn/Articles/article/15)
 - [2016]. [Wide & Deep Learning for Recommender Systems](https://arxiv.org/abs/1606.07792)
   - 简介：经典的Wide & Deep网络结构，综合了记忆和泛化的能力，wide侧偏重记忆，deep侧偏重泛化；同时是一种适合工业界落地的深度学习方案
   - 推荐指数：\* \* \* \* \*
@@ -118,6 +117,8 @@
   - 推荐指数：* * * *
   - 阅读笔记：[序列深度匹配SDM](http://felixzhao.cn/Articles/article/11)
 - [2019]. [Multi-Interest Network with Dynamic Routing for Recommendation at Tmall](https://arxiv.org/abs/1904.08030)
+  - 简介：聚焦在用户的兴趣的建模，不同于传统的单个兴趣性凉，通过**multi-interest extractor**抽取用户的不同兴趣
+  - 推荐指数：\* \* \* \* \*
 - [2019]. [Behavior Sequence Transformer for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1905.06874v1)
   - 简介：利用Transformer对用户行为序列建模
   - 推荐指数：\* \* \* \*
