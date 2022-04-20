@@ -2,7 +2,9 @@
 
 # Recommender-System论文、学习资料以及业界分享
 
-推荐系统（Recommender System）是机器学习应用较为成熟的方向之一，在工业界中，推荐系统也是大数据领域成功的应用之一。在一个较为完整的推荐系统中，不仅包含大家熟知的召回和排序两个阶段的常用算法之外，还会涉及到内容理解的部分的相关算法。除了算法之外，还涉及到大数据相关的处理技术以及工程实践。在实际的推荐系统中，通常与搜索中使用的技术互相借鉴，如下整理和总结了搜推中的一些核心技术，主要包含如下的几个部分：
+推荐系统（Recommender System）是大规模机器学习算法应用较为成熟的方向之一，在工业界中，推荐系统也是大数据领域成功的应用之一。在一个较为完整的推荐系统中，不仅包含大家熟知的召回和排序两个阶段的常用算法之外，对于一个完整的系统来说，还会涉及到内容理解的部分的相关算法。除了算法之外，还涉及到大数据相关的处理技术以及工程实践。
+
+在实际的推荐系统中，通常与搜索中使用的技术互相借鉴，如下整理和总结了搜推中的一些核心技术文章，还会增加一些分析，内容主要包含如下的几个部分：
 - 搜索、推荐系统综述
 - 召回排序算法
 - 内容理解
@@ -35,16 +37,31 @@
 
 ## 2.1. 召回
 
+- [2013]. [Learning Deep Structured Semantic Models for Web Search using Clickthrough Data](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cikm2013_DSSM_fullversion.pdf)
+  - 简介：本文提出了DSSM模型，在原始论文中，最初是用于在搜索中计算用于是否点击的，现通常被应用在推荐中的相似性召回
+  - 推荐指数：\* \* \* \* \*
+  - 阅读笔记：[深度语义模型DSSM](http://felixzhao.cn/Articles/article/4)
+- [2014]. [DeepWalk: Online Learning of Social Representations](https://arxiv.org/pdf/1403.6652.pdf)
+- [2015]. [LINE: Large-scale Information Network Embedding](https://arxiv.org/pdf/1503.03578.pdf)
 - [2016]. [Deep Neural Networks for YouTube Recommendations](https://www.researchgate.net/publication/307573656_Deep_Neural_Networks_for_YouTube_Recommendations)
   - 简介：经典的深度学习方案在YouTube上的实践，同时包含深度学习在召回和排序过程中的应用，非常值得学习
   - 推荐指数：\* \* \* \* \*
   - 阅读笔记：[Youtube的DeepMatch模型](http://felixzhao.cn/Articles/article/15)
+- [2016]. [node2vec: Scalable Feature Learning for Networks](https://arxiv.org/pdf/1607.00653.pdf)
 - [2018]. Learning Tree-based Deep Model for Recommender Systems
-  - 简介：基于向量内积的召回方式计算量较大，为解决计算量的问题，文中提出TDM模型，用树模型构建用户兴趣
+  - 简介：基于向量内积的召回方式计算量较大，为解决计算量的问题，文中提出**TDM**模型，用树模型构建用户兴趣
   - 推荐指数：\* \* \* \*
+- [2018]. [Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1803.02349)
+  - 简介：阿里提出的基于Graph Embedding的item的Embedding方案，相比传统的node2vec，通过增加side information解决冷启动的问题
+  - 推荐指数：\* \* \* \*
+  - 阅读笔记：[基于Graph Embedding的GES和EGES](http://felixzhao.cn/Articles/article/8)
 - [2019]. [MOBIUS: Towards the Next Generation of Query-Ad Matching in Baidu's Sponsored Search](https://dl.acm.org/doi/abs/10.1145/3292500.3330651)
   - 简介：对于搜索中的召回来说，召回的相关性以及召回的效率（如点击率或者转化率）都重要，文中提出在以效率为目标的前提下训练召回模型，为防止相关性漂移，在训练的过程中以相关性作为teacher进行active learning
 - [2019]. [Deep Semantic Matching for Amazon Product Search](https://wsdm2019-dapa.github.io/slides/05-YiweiSong.pdf)
+- [2019]. [SDM:Sequential Deep Matching Model for Online Large-scale Recommender System](https://arxiv.org/pdf/1909.00385.pdf)
+  - 简介：分别对用户长期和短期兴趣建模，学习到用户的长期兴趣和短期兴趣
+  - 推荐指数：* * * *
+  - 阅读笔记：[序列深度匹配SDM](http://felixzhao.cn/Articles/article/11)
 - [2020]. [A Comparison of Supervised Learning to Match Methods for Product Search](https://arxiv.org/abs/2007.10296)
   - 简介：商品搜索中多种Learning to Match方法的对比
 - [2020]. [Beyond Lexical:A semantic Retrieval Framework for Textual Search Engine](https://arxiv.org/abs/2008.03917)
@@ -71,10 +88,6 @@
   - 简介：FM算法在CTR中的应用
   - 推荐指数：\* \* \* \* \*
 - [2010]. Fast Context-aware Recommendations with Factorization Machines
-- [2013]. Learning deep structured semantic models for web search using clickthrough data
-  - 简介：本文提出了DSSM模型，在原始论文中，最初是用于在搜索中计算用于是否点击的，现通常被应用在推荐中的相似性召回
-  - 推荐指数：\* \* \* \* \*
-  - 阅读笔记：[深度语义模型DSSM](http://felixzhao.cn/Articles/article/4)
 - [2013]. Ad Click Prediction: a View from the Trenches
   - 简介：针对CTR预估中的大规模计算问题，提出**FTRL在线优化算法**，算法的理论性较强，同时是非常适合实际落地的方案
   - 推荐指数：\* \* \* \* \*
@@ -116,10 +129,6 @@
   - 简介：
 - [2017]. [Item2Vec-Neural Item Embedding for Collaborative Filtering](https://arxiv.org/pdf/1603.04259.pdf)
 - [2018]. [xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems](https://arxiv.org/abs/1803.05170)
-- [2018]. [Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1803.02349)
-  - 简介：阿里提出的基于Graph Embedding的item的Embedding方案，相比传统的node2vec，通过增加side information解决冷启动的问题
-  - 推荐指数：\* \* \* \*
-  - 阅读笔记：[基于Graph Embedding的GES和EGES](http://felixzhao.cn/Articles/article/8)
 - [2018]. [Real-time Personalization using Embeddings for Search Ranking at Airbnb](https://www.researchgate.net/publication/326503432_Real-time_Personalization_using_Embeddings_for_Search_Ranking_at_Airbnb)
 - [2018]. [Deep Interest Network for Click-Through Rate Prediction](https://arxiv.org/abs/1706.06978)
   - 简介：根据用户的历史行为学习到的用于兴趣向量不再是固定不变的，文中提出**DIN**模型，利用local activation unit基于不同的候选学习出不同的用户兴趣
@@ -133,11 +142,8 @@
 - [2018]. [Explainable Recommendation via Multi-Task Learning in Opinionated Text Data](https://arxiv.org/pdf/1806.03568.pdf)
 - [2018]. [TEM: Tree-enhanced Embedding Model for Explainable Recommendation](http://staff.ustc.edu.cn/~hexn/papers/www18-tem.pdf)
 - [2018]. [Neural Attentional Rating Regression with Review-level Explanations](http://www.thuir.cn/group/~YQLiu/publications/WWW2018_CC.pdf)
+- [2018]. [Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate](https://arxiv.org/pdf/1804.07931.pdf)
 - [2019]. [Order-aware Embedding Neural Network for CTR Prediction](https://dl.acm.org/citation.cfm?id=3331332)
-- [2019]. [SDM:Sequential Deep Matching Model for Online Large-scale Recommender System](https://arxiv.org/pdf/1909.00385.pdf)
-  - 简介：分别对用户长期和短期兴趣建模，学习到用户的长期兴趣和短期兴趣
-  - 推荐指数：* * * *
-  - 阅读笔记：[序列深度匹配SDM](http://felixzhao.cn/Articles/article/11)
 - [2019]. [Multi-Interest Network with Dynamic Routing for Recommendation at Tmall](https://arxiv.org/abs/1904.08030)
   - 简介：聚焦在用户的兴趣的建模，不同于传统的单个兴趣向量，通过**multi-interest extractor**抽取用户的不同兴趣
   - 推荐指数：\* \* \* \* \*
@@ -155,11 +161,14 @@
 - [2019]. [Recommending What Video to Watch Next: A Multitask Ranking System](https://dl.acm.org/doi/10.1145/3298689.3346997)
   - 简介：多目标优化是推荐系统中一个重要的研究方向，文章为解决多目标提出Multi-gate Mixture-of-Experts，以及为解决选择偏差的问题，提出对应的解决方案
   - 推荐指数：\* \* \* \* \*
-- [2019]. Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction
-- [2019]. Deep Session Interest Network for Click-Through Rate Prediction
-- [2019]. [Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction](https://arxiv.org/abs/1904.04447)
+- [2019]. [Deep Session Interest Network for Click-Through Rate Prediction](https://arxiv.org/pdf/1905.06482.pdf)
+- [2019]. [Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction](https://arxiv.org/pdf/1904.04447.pdf)
 - [2019]. [Personalized Re-ranking for Recommendation](https://arxiv.org/pdf/1904.06813.pdf)
 - [2019]. [Interaction-aware Factorization Machines for Recommender Systems](https://arxiv.org/pdf/1902.09757.pdf)
+- [2019]. [FiBiNET: Combining Feature Importance and Bilinear feature Interaction for Click-Through Rate Prediction](https://arxiv.org/pdf/1905.09433.pdf)
+- [2019]. [AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks](https://arxiv.org/pdf/1810.11921.pdf)
+- [2019]. [BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer](https://arxiv.org/pdf/1904.06690.pdf)
+- [2019]. [A Pareto-Efficient Algorithm for Multiple Objective Optimization in E-Commerce Recommendation](http://ofey.me/papers/Pareto.pdf)
 - [2020]. [Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations](https://dl.acm.org/doi/10.1145/3383313.3412236)
   - 简介：多任务学习算法**Progressive Layered Extraction (PLE)**
   - 推荐指数：\* \* \* \* \*
