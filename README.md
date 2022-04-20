@@ -75,6 +75,7 @@
   - 简介：【Facebook】的一篇基于搜索中query和商品理解的文章，具有很强的实践性，文中介绍如何采用多任务和多模态的模型对query以及商品的表示，并涉及到query和商品理解的系统Que2Search的训练以及部署
 - [2021]. [Embedding-based Product Retrieval in Taobao Search](http://www.researchgate.net/publication/351902997_Embedding_based_Product_Retrieval_in_Taobao_Search)
   - 简介：在搜索召回过程中，较为重要的一个问题是如何保证召回的相关性，即召回的结果与查询的query之间是相关的。在文章提出**Multi-Grained Deep Semantic Product Retrieval**（MGDSPR）算法，从两个方面，分别解决两个问题：第一，训练和推断之间的不一致；第二，如何保证相关性。
+- [2021]. [Pre-trained Language Model for Web-scale Retrieval in Baidu Search](https://arxiv.org/pdf/2106.03373.pdf)
 
 ## 2.2. 排序
 
