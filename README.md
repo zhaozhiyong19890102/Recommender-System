@@ -201,6 +201,8 @@
   - 简介：预训练模型ELMo
   - 推荐指数：\* \* \* \*
   - 阅读笔记：[Embeddings from Language Models（ELMo）](http://felixzhao.cn/Articles/article/29)
+- [2018]. [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf)
+  - 简介：
 
 ## 3.2. CV
 
