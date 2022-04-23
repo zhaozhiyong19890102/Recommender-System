@@ -133,6 +133,8 @@
 - [2018]. [Real-time Personalization using Embeddings for Search Ranking at Airbnb](https://www.researchgate.net/publication/326503432_Real-time_Personalization_using_Embeddings_for_Search_Ranking_at_Airbnb)
 - [2018]. [Deep Interest Network for Click-Through Rate Prediction](https://arxiv.org/abs/1706.06978)
   - 简介：根据用户的历史行为学习到的用于兴趣向量不再是固定不变的，文中提出**DIN**模型，利用local activation unit基于不同的候选学习出不同的用户兴趣
+  - 推荐指数：\* \* \*
+  - 阅读笔记：[深度兴趣网络DIN](http://120.53.236.240/Articles/article/32)
 - [2018]. [Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate](https://arxiv.org/abs/1804.07931)
   - 简介：为解决在CVR建模过程中的样本选择以及数据稀疏问题，提出**ESMM**（Entire Space Multi-task Model）算法，通过在全空间上直接对CVR建模，以及利用transfer learning的策略进行特征表示
   - 推荐指数：\* \* \* \* \*
