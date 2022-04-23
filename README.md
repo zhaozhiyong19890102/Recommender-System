@@ -60,7 +60,7 @@
 - [2019]. [Deep Semantic Matching for Amazon Product Search](https://wsdm2019-dapa.github.io/slides/05-YiweiSong.pdf)
 - [2019]. [SDM:Sequential Deep Matching Model for Online Large-scale Recommender System](https://arxiv.org/pdf/1909.00385.pdf)
   - 简介：分别对用户长期和短期兴趣建模，学习到用户的长期兴趣和短期兴趣
-  - 推荐指数：* * * *
+  - 推荐指数：\* \* \* \*
   - 阅读笔记：[序列深度匹配SDM](http://felixzhao.cn/Articles/article/11)
 - [2020]. [A Comparison of Supervised Learning to Match Methods for Product Search](https://arxiv.org/abs/2007.10296)
   - 简介：商品搜索中多种Learning to Match方法的对比
@@ -71,6 +71,8 @@
 - [2020]. Deep Retrieval: An End-to-End Learnable Structure Model for Large-Scale Recommendations 
 - [2020]. [Embedding-based Retrieval in Facebook Search](https://arxiv.org/abs/2006.11632)
   - 简介：Facebook搜索中充分利用用户的上下文信息训练向量召回模型为用户提供相关的结果
+  - 推荐指数：\* \* \* \*
+  - 阅读笔记：[Facebook搜索的向量搜索](http://120.53.236.240/Articles/article/34)
 - [2021]. [Que2Search: Fast and Accurate Query and Document Understanding for Search at Facebook](https://dl.acm.org/doi/abs/10.1145/3447548.3467127?casa_token=_lzmp_XyNlYAAAAA%3AGOrfD2dLCe30ucy1vkacYK85-5i2agy4oKoybzluibUck-JA56hxpIGvgBa_hchJTe9fE6Dx1-3-oGs)
   - 简介：【Facebook】的一篇基于搜索中query和商品理解的文章，具有很强的实践性，文中介绍如何采用多任务和多模态的模型对query以及商品的表示，并涉及到query和商品理解的系统Que2Search的训练以及部署
 - [2021]. [Embedding-based Product Retrieval in Taobao Search](http://www.researchgate.net/publication/351902997_Embedding_based_Product_Retrieval_in_Taobao_Search)
