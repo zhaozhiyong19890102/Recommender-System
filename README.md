@@ -204,6 +204,10 @@
 
 ## 3.2. CV
 
+- [2017]. [Visual Search at eBay](https://arxiv.org/pdf/1706.03154.pdf)
+- [2017]. [Visual Search at Pinterest](https://arxiv.org/pdf/1505.07647.pdf)
+- [2018]. [Visual Search at Alibaba](https://arxiv.org/pdf/2102.04674.pdf)
+
 
 # 4. 架构工程实践
 
