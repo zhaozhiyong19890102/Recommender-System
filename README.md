@@ -196,10 +196,11 @@
   - 简介：文本分类工具FastText的文章，FastText在当前的文本分类任务中依旧是很好的工具
   - 推荐指数：\* \* \* \*
   - 阅读笔记：[文本分类fastText算法解析](http://felixzhao.cn/Articles/article/13)
-- [2017]. Attention Is All You Need
+- [2017]. [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
   - 简介：Attention的经典文章
   - 推荐指数：\* \* \* \* \*
-- [2018]. Deep Contextualized Word Representations
+  - 阅读笔记：[Transformer的基本原理](http://felixzhao.cn/Articles/article/36)
+- [2018]. [Deep Contextualized Word Representations](https://www.researchgate.net/publication/323217640_Deep_contextualized_word_representations)
   - 简介：预训练模型ELMo
   - 推荐指数：\* \* \* \*
   - 阅读笔记：[Embeddings from Language Models（ELMo）](http://felixzhao.cn/Articles/article/29)
@@ -207,6 +208,10 @@
   - 简介：预训练模型GPT
   - 推荐指数：\* \* \* \*
   - 阅读笔记：[GPT：Generative Pre-Training](http://120.53.236.240/Articles/article/33)
+- [2018]. [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)
+  - 简介：预训练模型BERT
+  - 推荐指数：\* \* \* \* \*
+  - 阅读笔记：[BERT模型解析](http://felixzhao.cn/Articles/article/38)
 
 ## 3.2. CV
 
