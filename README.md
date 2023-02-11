@@ -192,6 +192,9 @@
 - [2020]. Bias and Debias in Recommender System: A Survey and Future Directions
 - [2020]. [Category-Specific CNN for Visual-aware CTR Prediction at JD. com]
 - [2021]. Self-Supervised Learning on Users' Spontaneous Behaviors for Multi-Scenario Ranking in E-commerce
+- [2021]. (CIKM2021 Best Paper)[SAR-Net: A Scenario-Aware Ranking Network for Personalized Fair Recommendation in Hundreds of Travel Scenarios](https://arxiv.org/abs/2110.06475)
+- [2022]. (CIKM2022 Best Paper)[Real-time Short Video Recommendation on Mobile Devices](https://arxiv.org/pdf/2208.09577.pdf)
+- [2022]. [AdaSparse: Learning Adaptively Sparse Structures for Multi-Domain Click-Through Rate Prediction](https://arxiv.org/pdf/2206.13108.pdf)
 
 # 3. 内容理解
 
