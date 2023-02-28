@@ -15,7 +15,6 @@
 **(以下内容会持续更新)**
 
 # 1. 搜索、推荐系统综述
-
 - [2005]. [Toward the Next Generation of Recommender Systems A Survey of the State-of-the-Art and Possible Extensions](https://ieeexplore.ieee.org/document/1423975)
   - 简介：据说是推荐系统的必读文章，2005年的state-of-the-art的推荐综述，按照content-based, CF, Hybrid的分类方法进行组织，并介绍了推荐引擎设计时需要关注的特性指标，内容非常全。
 - [2010]. [The YouTube video recommendation system](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/The%20YouTube%20video%20recommendation%20system.pdf)
@@ -32,10 +31,8 @@
 - [2020]. [从零开始了解推荐系统全貌](https://zhuanlan.zhihu.com/p/259985388)
   - 简介：介绍了推荐系统的多个方面，包括用户画像，召回排序算法及策略，比较全面，适合初学者了解推荐系统的全貌
 
-# 2. 召回排序算法
-
+# 2. 召回、精排和重排算法以及策略
 ## 2.1. 召回
-
 - [2013]. [Learning Deep Structured Semantic Models for Web Search using Clickthrough Data](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cikm2013_DSSM_fullversion.pdf)
   - 简介：本文提出了DSSM模型，在原始论文中，最初是用于在搜索中计算用于是否点击的，现通常被应用在推荐中的相似性召回
   - 阅读笔记：[深度语义模型DSSM](http://felixzhao.cn/Articles/article/4)
@@ -83,8 +80,7 @@
 - [2021]. [A Dual Augmented Two-tower Model for Online Large-scale Recommendation](https://dlp-kdd.github.io/assets/pdf/DLP-KDD_2021_paper_4.pdf)
   - 简介：在双塔召回中存在的问题有：第一，与排序模型不一样，在双塔模型底层缺乏信息的交互，事实证明交互信息对于模型效果有着很重要的作用；第二，双塔模型中也存在着类目数据的不平衡。在文章提出了Dual Augmented Two-tower Model（DAT）模型，力图从两个方面解决上述的问题，第一，引入增强向量，同时设计了一种自适应模拟机制AMM（Adaptive-Mimic Mechanism）来学习增强向量；第二，提出了类别对齐损失CAL（Category Alignment Loss）。
 
-## 2.2. 排序
-
+## 2.2. 精排
 - [2000]. Application of Dimensionality Reduction in Recommender System -- A Case Study
 - [2003]. Amazon.com recommendations:Item-to-item collaborative filtering
   - 简介：亚马逊提出经典的item-based协同过滤算法
@@ -154,8 +150,6 @@
   - 简介：多目标优化是推荐系统中一个重要的研究方向，文章为解决多目标提出Multi-gate Mixture-of-Experts，以及为解决选择偏差的问题，提出对应的解决方案
 - [2019]. [Deep Session Interest Network for Click-Through Rate Prediction](https://arxiv.org/pdf/1905.06482.pdf)
 - [2019]. [Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction](https://arxiv.org/pdf/1904.04447.pdf)
-- [2019]. [Personalized Re-ranking for Recommendation](https://arxiv.org/pdf/1904.06813.pdf)
-  - 简介：重排
 - [2019]. [Interaction-aware Factorization Machines for Recommender Systems](https://arxiv.org/pdf/1902.09757.pdf)
 - [2019]. [FiBiNET: Combining Feature Importance and Bilinear feature Interaction for Click-Through Rate Prediction](https://arxiv.org/pdf/1905.09433.pdf)
   - 简介：通常处理特征交叉是通过Hadamard product和inner product，很少关注交叉特征的重要性，在FiBiNET中，改进特征的交叉方式以及增加特征重要行的学习，分别通过**SENET**机制动态学习特征的重要性，通过**bilinear**函数学习特征的交叉
@@ -180,6 +174,11 @@
 - [2021]. (CIKM2021 Best Paper)[SAR-Net: A Scenario-Aware Ranking Network for Personalized Fair Recommendation in Hundreds of Travel Scenarios](https://arxiv.org/abs/2110.06475)
 - [2022]. (CIKM2022 Best Paper)[Real-time Short Video Recommendation on Mobile Devices](https://arxiv.org/pdf/2208.09577.pdf)
 - [2022]. [AdaSparse: Learning Adaptively Sparse Structures for Multi-Domain Click-Through Rate Prediction](https://arxiv.org/pdf/2206.13108.pdf)
+
+## 2.3. 重排
+- [2018]. [Learning a Deep Listwise Context Model for Ranking Refinement](https://arxiv.org/pdf/1804.05936.pdf)
+- [2019]. [Personalized Re-ranking for Recommendation](https://arxiv.org/pdf/1904.06813.pdf)
+  - 简介：重排
 
 # 3. 基础模型
 ## 3.1. NLP
