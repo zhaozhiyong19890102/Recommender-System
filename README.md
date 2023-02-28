@@ -179,6 +179,7 @@
 - [2018]. [Learning a Deep Listwise Context Model for Ranking Refinement](https://arxiv.org/pdf/1804.05936.pdf)
 - [2019]. [Personalized Re-ranking for Recommendation](https://arxiv.org/pdf/1904.06813.pdf)
   - 简介：重排
+- [2022]. [Multi-Level Interaction Reranking with User Behavior History](https://arxiv.org/pdf/2204.09370.pdf)
 
 # 3. 基础模型
 ## 3.1. NLP
