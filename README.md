@@ -31,8 +31,10 @@
 - [2020]. [从零开始了解推荐系统全貌](https://zhuanlan.zhihu.com/p/259985388)
   - 简介：介绍了推荐系统的多个方面，包括用户画像，召回排序算法及策略，比较全面，适合初学者了解推荐系统的全貌
 
-# 2. 召回、精排和重排算法以及策略
+# 2. 召回、粗排、精排和重排算法以及策略
 ## 2.1. 召回
+- [2003]. Amazon.com recommendations:Item-to-item collaborative filtering
+  - 简介：亚马逊提出经典的item-based协同过滤算法，在现如今的实现中，基于i2i的算法都是召回环节的一条召回链路
 - [2013]. [Learning Deep Structured Semantic Models for Web Search using Clickthrough Data](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cikm2013_DSSM_fullversion.pdf)
   - 简介：本文提出了DSSM模型，在原始论文中，最初是用于在搜索中计算用于是否点击的，现通常被应用在推荐中的相似性召回
   - 阅读笔记：[深度语义模型DSSM](http://felixzhao.cn/Articles/article/4)
@@ -80,10 +82,12 @@
 - [2021]. [A Dual Augmented Two-tower Model for Online Large-scale Recommendation](https://dlp-kdd.github.io/assets/pdf/DLP-KDD_2021_paper_4.pdf)
   - 简介：在双塔召回中存在的问题有：第一，与排序模型不一样，在双塔模型底层缺乏信息的交互，事实证明交互信息对于模型效果有着很重要的作用；第二，双塔模型中也存在着类目数据的不平衡。在文章提出了Dual Augmented Two-tower Model（DAT）模型，力图从两个方面解决上述的问题，第一，引入增强向量，同时设计了一种自适应模拟机制AMM（Adaptive-Mimic Mechanism）来学习增强向量；第二，提出了类别对齐损失CAL（Category Alignment Loss）。
 
-## 2.2. 精排
+## 2.2. 粗排
+- [2020]. [COLD: Towards the Next Generation of Pre-Ranking System](https://arxiv.org/abs/2007.16122v1)
+  - 简介：长期以来，粗排（pre-ranking）一直被认为是精排（ranking）的简化版本，这就导致系统会陷入局部最优，文中提出COLD同时优化粗排模型和计算效率
+
+## 2.3. 精排
 - [2000]. Application of Dimensionality Reduction in Recommender System -- A Case Study
-- [2003]. Amazon.com recommendations:Item-to-item collaborative filtering
-  - 简介：亚马逊提出经典的item-based协同过滤算法
 - [2007]. Predicting clicks: estimating the click-through rate for new ads
   - 简介：LR算法应用于CTR问题
 - [2010]. Factorization Machines
@@ -135,8 +139,6 @@
 - [2018]. [Neural Attentional Rating Regression with Review-level Explanations](http://www.thuir.cn/group/~YQLiu/publications/WWW2018_CC.pdf)
 - [2018]. Self-Attentive Sequential Recommendation
 - [2019]. [Order-aware Embedding Neural Network for CTR Prediction](https://dl.acm.org/citation.cfm?id=3331332)
-- [2019]. [Multi-Interest Network with Dynamic Routing for Recommendation at Tmall](https://arxiv.org/abs/1904.08030)
-  - 简介：聚焦在用户的兴趣的建模，不同于传统的单个兴趣向量，通过**multi-interest extractor**抽取用户的不同兴趣
 - [2019]. [Behavior Sequence Transformer for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1905.06874v1)
   - 简介：利用Transformer对用户行为序列建模
   - 阅读笔记：[Transformer对用户行为序列建模算法BST](http://felixzhao.cn/Articles/article/9)
@@ -146,8 +148,6 @@
   - 简介：用户行为不再是孤立的，而是存在时序的关系，在DIN模型的基础上，文中提出**DIEN**模型，分别设计了兴趣抽取层和兴趣演化层对用户行为的时序关系建模
 - [2019]. [Deep Learning Recommendation Model for Personalization and Recommendation Systems](https://arxiv.org/abs/1906.00091v1)
   - 简介：Facebook关于深度学习在推荐系统中落地的文章，文中提出**DLRM**模型，模型上重点在稀疏特征和稠密特征的处理上，同时对于如何在实践中落地提出了解决的方案
-- [2019]. [Recommending What Video to Watch Next: A Multitask Ranking System](https://dl.acm.org/doi/10.1145/3298689.3346997)
-  - 简介：文章针对两个方面的问题提出针对性的解决方案：第一，多目标建模问题。文章中提出MMoE（Multi-gate Mixture-of-Experts）；第二，建模中的position-bias问题。文章中提出使用shallow tower对position建模。
 - [2019]. [Deep Session Interest Network for Click-Through Rate Prediction](https://arxiv.org/pdf/1905.06482.pdf)
 - [2019]. [Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction](https://arxiv.org/pdf/1904.04447.pdf)
 - [2019]. [Interaction-aware Factorization Machines for Recommender Systems](https://arxiv.org/pdf/1902.09757.pdf)
@@ -155,18 +155,10 @@
   - 简介：通常处理特征交叉是通过Hadamard product和inner product，很少关注交叉特征的重要性，在FiBiNET中，改进特征的交叉方式以及增加特征重要行的学习，分别通过**SENET**机制动态学习特征的重要性，通过**bilinear**函数学习特征的交叉
 - [2019]. [AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks](https://arxiv.org/pdf/1810.11921.pdf)
 - [2019]. [BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer](https://arxiv.org/pdf/1904.06690.pdf)
-- [2019]. [A Pareto-Efficient Algorithm for Multiple Objective Optimization in E-Commerce Recommendation](http://ofey.me/papers/Pareto.pdf)
-- [2019]. PAL: A Position-bias Aware Learning Framework for CTR Prediction in Live Recommender Systems
-- [2020]. [Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations](https://dl.acm.org/doi/10.1145/3383313.3412236)
-  - 简介：多任务学习算法**Progressive Layered Extraction (PLE)**，是MMoE多任务学习模型的升级版本，
 - [2020]. [Controllable Multi-Interest Framework for Recommendation](https://arxiv.org/abs/2005.09347)
 - [2020]. [FuxiCTR: An Open Benchmark for Click-Through Rate Prediction](https://arxiv.org/abs/2009.05794)
   - 简介：对多种CTR模型的对比，包括浅层模型和深度模型，浅层模型包括LR，FM，FFM等，深度模型包括DNN，Wide&Deep，PNN等
-- [2020]. [COLD: Towards the Next Generation of Pre-Ranking System](https://arxiv.org/abs/2007.16122v1)
-  - 简介：长期以来，粗排（pre-ranking）一直被认为是精排（ranking）的简化版本，这就导致系统会陷入局部最优，文中提出COLD同时优化粗排模型和计算效率
 - [2020]. Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction
-- [2020]. Deep Multifaceted Transformers for Multi-objective Ranking in Large-Scale E-commerce Recommender Systems
-- [2020]. Bias and Debias in Recommender System: A Survey and Future Directions
 - [2020]. [Category-Specific CNN for Visual-aware CTR Prediction at JD. com]
 - [2020]. [Privileged Features Distillation at Taobao Recommendations](https://arxiv.org/pdf/1907.05171.pdf)
   - 简介：在实际的工作中经常需要处理训练和预测时特征不一致的问题，比如某些特征，在训练的时候能够获得，但是在预测的时候不便获得，且该特征对于模型有很正向的作用，文中提出使用蒸馏的方式，即：privileged features distillation（PFD），在Teacher模型中包含了这类privileged features，但在student模型中不再包含这类特征。
@@ -175,12 +167,22 @@
 - [2022]. (CIKM2022 Best Paper)[Real-time Short Video Recommendation on Mobile Devices](https://arxiv.org/pdf/2208.09577.pdf)
 - [2022]. [AdaSparse: Learning Adaptively Sparse Structures for Multi-Domain Click-Through Rate Prediction](https://arxiv.org/pdf/2206.13108.pdf)
 
-### 2.2.1. position-bias
+### 2.3.1. position-bias
 - [2019]. [Recommending What Video to Watch Next: A Multitask Ranking System](https://dl.acm.org/doi/10.1145/3298689.3346997)
   - 简介：针对样本选择时的position-bias问题，文章中提出额外使用shallow tower对position建模
+- [2019]. [PAL: A Position-bias Aware Learning Framework for CTR Prediction in Live Recommender Systems](https://www.researchgate.net/publication/335771749_PAL_a_position-bias_aware_learning_framework_for_CTR_prediction_in_live_recommender_systems)
+- [2020]. Bias and Debias in Recommender System: A Survey and Future Directions
+
+### 2.3.2. 多任务建模
+- [2019]. [Recommending What Video to Watch Next: A Multitask Ranking System](https://dl.acm.org/doi/10.1145/3298689.3346997)
+  - 简介：文章针对两个方面的问题提出针对性的解决方案：第一个就是多目标建模问题。文章中提出MMoE（Multi-gate Mixture-of-Experts）对多目标建模。
+- [2019]. [A Pareto-Efficient Algorithm for Multiple Objective Optimization in E-Commerce Recommendation](http://ofey.me/papers/Pareto.pdf)
+- [2020]. [Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations](https://dl.acm.org/doi/10.1145/3383313.3412236)
+  - 简介：多任务学习算法**Progressive Layered Extraction (PLE)**，是MMoE多任务学习模型的升级版本，
+- [2020]. Deep Multifaceted Transformers for Multi-objective Ranking in Large-Scale E-commerce Recommender Systems
 
 
-## 2.3. 重排
+## 2.4. 重排
 - [2018]. [Learning a Deep Listwise Context Model for Ranking Refinement](https://arxiv.org/pdf/1804.05936.pdf)
 - [2019]. [Personalized Re-ranking for Recommendation](https://arxiv.org/pdf/1904.06813.pdf)
   - 简介：重排
@@ -188,7 +190,6 @@
 
 # 3. 基础模型
 ## 3.1. NLP
-
 - [2014]. [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882)
   - 简介：CNN模型解决文本分类的问题
   - 阅读笔记：[CNN在文本建模中的应用TextCNN](http://felixzhao.cn/Articles/article/12)
