@@ -222,8 +222,7 @@
 - [2017]. [Visual Search at Pinterest](https://arxiv.org/pdf/1505.07647.pdf)
 - [2018]. [Visual Search at Alibaba](https://arxiv.org/pdf/2102.04674.pdf)
 
-# 5. 工业界解决方案
-
+# 6. 工业界解决方案
 - [深度召回模型在QQ看点推荐中的应用实践](https://cloud.tencent.com/developer/article/1400798)
 - [Embedding在腾讯应用宝的推荐实践](https://cloud.tencent.com/developer/article/1682111)
 - [腾讯音乐：全民K歌推荐系统架构及粗排设计](https://mp.weixin.qq.com/s/BRj20yVvWTuBpMMu8PRScQ)
