@@ -181,7 +181,6 @@
   - 简介：多任务学习算法**Progressive Layered Extraction (PLE)**，是MMoE多任务学习模型的升级版本，
 - [2020]. Deep Multifaceted Transformers for Multi-objective Ranking in Large-Scale E-commerce Recommender Systems
 
-
 ## 2.4. 重排
 - [2018]. [Learning a Deep Listwise Context Model for Ranking Refinement](https://arxiv.org/pdf/1804.05936.pdf)
 - [2019]. [Personalized Re-ranking for Recommendation](https://arxiv.org/pdf/1904.06813.pdf)
@@ -210,18 +209,18 @@
   - 阅读笔记：[BERT模型解析](http://felixzhao.cn/Articles/article/38)
 
 ## 3.2. CV
-
-- [2017]. [Visual Search at eBay](https://arxiv.org/pdf/1706.03154.pdf)
-- [2017]. [Visual Search at Pinterest](https://arxiv.org/pdf/1505.07647.pdf)
-- [2018]. [Visual Search at Alibaba](https://arxiv.org/pdf/2102.04674.pdf)
 - [2020]. [An image is worth 16x16 words: Transformers for image recognition at scale](https://arxiv.org/abs/2010.11929)
   - 简介：提出了基于Transformer中Encoder的图像分类模型ViT（Vision Transformer）
   - 阅读笔记：[Vision Transformer（ViT）](http://felixzhao.cn/Articles/article/56)
 
-
 # 4. 架构工程实践
-
 - [2020]. [为什么微信推荐这么快？](https://zhuanlan.zhihu.com/p/163189281)
+
+# 5. 其他方向
+## 5.1. 图像搜索
+- [2017]. [Visual Search at eBay](https://arxiv.org/pdf/1706.03154.pdf)
+- [2017]. [Visual Search at Pinterest](https://arxiv.org/pdf/1505.07647.pdf)
+- [2018]. [Visual Search at Alibaba](https://arxiv.org/pdf/2102.04674.pdf)
 
 # 5. 工业界解决方案
 
