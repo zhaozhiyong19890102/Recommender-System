@@ -45,6 +45,7 @@
   - 阅读笔记：[Youtube的DeepMatch模型](http://felixzhao.cn/Articles/article/15)
 - [2016]. [node2vec: Scalable Feature Learning for Networks](https://arxiv.org/pdf/1607.00653.pdf)
   - 简介：节点向量表示的一种方法，在推荐系统中的每一个item，都可以通过用户行为转换成图的表示，通过node2vec的方法，学习到图中每一个节点的向量表示，从而能够通过向量的距离度量不同节点之间的相似度
+- [2017]. [Item2Vec-Neural Item Embedding for Collaborative Filtering](https://arxiv.org/pdf/1603.04259.pdf)
 - [2018]. Learning Tree-based Deep Model for Recommender Systems
   - 简介：基于向量内积的召回方式计算量较大，为解决计算量的问题，文中提出**TDM**模型，用树模型构建用户兴趣
 - [2018]. [Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1803.02349)
@@ -88,11 +89,11 @@
   - 简介：长期以来，粗排（pre-ranking）一直被认为是精排（ranking）的简化版本，这就导致系统会陷入局部最优，文中提出COLD同时优化粗排模型和计算效率
 
 ## 2.3. 精排
-- [2000]. Application of Dimensionality Reduction in Recommender System -- A Case Study
+### 2.3.1. 建模方法
 - [2007]. Predicting clicks: estimating the click-through rate for new ads
-  - 简介：LR算法应用于CTR问题
+  - 简介：**LR**算法应用于求解CTR问题
 - [2010]. Factorization Machines
-  - 简介：FM算法在CTR中的应用
+  - 简介：**FM**算法在CTR中的应用
 - [2010]. Fast Context-aware Recommendations with Factorization Machines
 - [2013]. Ad Click Prediction: a View from the Trenches
   - 简介：针对CTR预估中的大规模计算问题，提出**FTRL在线优化算法**，算法的理论性较强，同时是非常适合实际落地的方案
@@ -101,38 +102,33 @@
 - [2016]. [Deep Neural Networks for YouTube Recommendations](https://www.researchgate.net/publication/307573656_Deep_Neural_Networks_for_YouTube_Recommendations)
   - 简介：经典的深度学习方案在YouTube上的实践，同时包含深度学习在召回和排序过程中的应用，非常值得学习
 - [2016]. [Wide & Deep Learning for Recommender Systems](https://arxiv.org/abs/1606.07792)
-  - 简介：经典的Wide & Deep网络结构，综合了记忆和泛化的能力，wide侧偏重记忆，deep侧偏重泛化；同时是一种适合工业界落地的深度学习方案
+  - 简介：经典的**Wide & Deep**网络结构，综合了记忆和泛化的能力，wide侧偏重记忆，deep侧偏重泛化；同时是一种适合工业界落地的深度学习方案
   - 阅读笔记：[Wide & Deep算法](http://felixzhao.cn/Articles/article/18)
 - [2016]. [Deep Crossing: Web-Scale Modeling without Manually Crafted Combinatorial Features](https://www.kdd.org/kdd2016/subtopic/view/deep-crossing-web-scale-modeling-without-manually-crafted-combinatorial-fea)
-  - 简介：较为经典的深度学习在CTR问题上的应用，网络结构上与传统的MLP没有特别大的差别，唯一的区别是在MLP的计算中增加了残差的计算
+  - 简介：较为经典的深度学习在CTR问题上的应用，提出**Deep Crossing**网络结构，在网络结构上与传统的MLP没有特别大的差别，唯一的区别是在MLP的计算中增加了残差的计算
   - 阅读笔记：[Deep Crossing](http://felixzhao.cn/Articles/article/23)
 - [2016]. [Product-based Neural Networks for User Response Prediction](https://arxiv.org/abs/1611.00144)
-  - 简介：为解决DNN不能有效处理高维特征，且方便处理交叉特征，文章中提出PNN网络结构，利用embedding层处理高维特征，增加product层处理特征交叉
+  - 简介：为解决DNN不能有效处理高维特征，且方便处理交叉特征，文章中提出**PNN**网络结构，利用embedding层处理高维特征，增加product层处理特征交叉
   - 阅读笔记：[PNN网络（Product-based Neural Network）](http://felixzhao.cn/Articles/article/22)
 - [2016]. [Session-based Recommendations with Recurrent Neural Networks](https://arxiv.org/pdf/1511.06939.pdf)
   - 简介：通过GRU模型对用户的历史Session建模，属于对用户序列化建模的早期文章
   - 阅读笔记：[基于Session的推荐](http://felixzhao.cn/Articles/article/10)
 - [2016]. Xgboost: A scalable tree boosting system
+  - 简介：这是一篇介绍Xgboost这个工具的文章，Xgboost是CTR预估中使用的一个工具，其底层原理是GBDT算法，得益于GBDT+LR的组合，使得GBDT在CTR预估领域有着广泛应用
 - [2017]. [DeepFM : A Factorization-Machine based Neural Network for CTR Prediction](https://arxiv.org/abs/1703.04247)
-  - 简介：DeepFM在Wide&Deep的基础上引入了交叉特征，使得模型能够更好的学习到组合特征
+  - 简介：**DeepFM**在Wide & Deep的基础上引入了交叉特征，使得模型能够更好的学习到组合特征
   - 阅读笔记：[DeepFM](http://felixzhao.cn/Articles/article/26)
 - [2017]. [Deep & Cross Network for Ad Click Predictions](https://arxiv.org/abs/1708.05123)
-  - 简介：对Wide & Deep模型优化，将Wide & Deep模型中的Wide部分替换成Cross network，用于自动化特征交叉
+  - 简介：对Wide & Deep模型优化，将Wide & Deep模型中的Wide部分替换成Cross network，提出了**Deep & Cross Network**，以实现特征交叉的自动化
   - 阅读笔记：[Deep&Cross Network（DCN）](http://felixzhao.cn/Articles/article/25)
 - [2017]. Learning Piece-wise Linear Models from Large Scale Data for Ad Click Prediction
 - [2017]. [Attentional Factorization Machines: Learning the Weight of Feature Interactions via Attention Networks](https://arxiv.org/abs/1708.04617)
   - 简介：
-- [2017]. [Item2Vec-Neural Item Embedding for Collaborative Filtering](https://arxiv.org/pdf/1603.04259.pdf)
 - [2018]. [xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems](https://arxiv.org/abs/1803.05170)
 - [2018]. [Real-time Personalization using Embeddings for Search Ranking at Airbnb](https://www.researchgate.net/publication/326503432_Real-time_Personalization_using_Embeddings_for_Search_Ranking_at_Airbnb)
 - [2018]. [Deep Interest Network for Click-Through Rate Prediction](https://arxiv.org/abs/1706.06978)
   - 简介：根据用户的历史行为学习到的用于兴趣向量不再是固定不变的，文中提出**DIN**模型，利用local activation unit基于不同的候选学习出不同的用户兴趣
   - 阅读笔记：[深度兴趣网络DIN](http://120.53.236.240/Articles/article/32)
-- [2018]. [Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate](https://arxiv.org/pdf/1804.07931.pdf)
-  - 简介：为解决在CVR建模过程中的样本选择以及数据稀疏问题，提出**ESMM**（Entire Space Multi-task Model）算法，通过在全空间上直接对CVR建模，以及利用transfer learning的策略进行特征表示
-- [2018]. [Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts](https://www.kdd.org/kdd2018/accepted-papers/view/modeling-task-relationships-in-multi-task-learning-with-multi-gate-mixture-)
-  - 简介：多任务模型的预测效果通常与任务之间的关系有关，文中提出**MMoE模型**，通过对任务之间的关系建模以达到多个目标函数以及任务之间关系的平衡
-  - 阅读笔记：[Multi-gate Mixture-of-Experts（MMoE）](http://felixzhao.cn/Articles/article/30)
 - [2018]. [Explainable Recommendation via Multi-Task Learning in Opinionated Text Data](https://arxiv.org/pdf/1806.03568.pdf)
 - [2018]. [TEM: Tree-enhanced Embedding Model for Explainable Recommendation](http://staff.ustc.edu.cn/~hexn/papers/www18-tem.pdf)
 - [2018]. [Neural Attentional Rating Regression with Review-level Explanations](http://www.thuir.cn/group/~YQLiu/publications/WWW2018_CC.pdf)
@@ -173,6 +169,11 @@
 - [2020]. Bias and Debias in Recommender System: A Survey and Future Directions
 
 ### 2.3.2. 多任务建模
+- [2018]. [Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate](https://arxiv.org/pdf/1804.07931.pdf)
+  - 简介：为解决在CVR建模过程中的样本选择以及数据稀疏问题，提出**ESMM**（Entire Space Multi-task Model）算法，通过在全空间上直接对CVR建模，以及利用transfer learning的策略进行特征表示
+- [2018]. [Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts](https://www.kdd.org/kdd2018/accepted-papers/view/modeling-task-relationships-in-multi-task-learning-with-multi-gate-mixture-)
+  - 简介：多任务模型的预测效果通常与任务之间的关系有关，文中提出**MMoE模型**，通过对任务之间的关系建模以达到多个目标函数以及任务之间关系的平衡
+  - 阅读笔记：[Multi-gate Mixture-of-Experts（MMoE）](http://felixzhao.cn/Articles/article/30)
 - [2019]. [Recommending What Video to Watch Next: A Multitask Ranking System](https://dl.acm.org/doi/10.1145/3298689.3346997)
   - 简介：文章针对两个方面的问题提出针对性的解决方案：第一个就是多目标建模问题。文章中提出MMoE（Multi-gate Mixture-of-Experts）对多目标建模。
 - [2019]. [A Pareto-Efficient Algorithm for Multiple Objective Optimization in E-Commerce Recommendation](http://ofey.me/papers/Pareto.pdf)
