@@ -44,6 +44,7 @@
   - 简介：经典的深度学习方案在YouTube上的实践，同时包含深度学习在召回和排序过程中的应用，非常值得学习
   - 阅读笔记：[Youtube的DeepMatch模型](http://felixzhao.cn/Articles/article/15)
 - [2016]. [node2vec: Scalable Feature Learning for Networks](https://arxiv.org/pdf/1607.00653.pdf)
+  - 简介：节点向量表示的一种方法，在推荐系统中的每一个item，都可以通过用户行为转换成图的表示，通过node2vec的方法，学习到图中每一个节点的向量表示，从而能够通过向量的距离度量不同节点之间的相似度
 - [2018]. Learning Tree-based Deep Model for Recommender Systems
   - 简介：基于向量内积的召回方式计算量较大，为解决计算量的问题，文中提出**TDM**模型，用树模型构建用户兴趣
 - [2018]. [Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1803.02349)
@@ -97,8 +98,6 @@
   - 简介：针对CTR预估中的大规模计算问题，提出**FTRL在线优化算法**，算法的理论性较强，同时是非常适合实际落地的方案
 - [2014]. [Practical lessons from predicting clicks on ads at facebook](https://quinonero.net/Publications/predicting-clicks-facebook.pdf)
   - 简介：经典的**GBDT+LR**的解决方案，用于CTR预估，GBDT用于特征的处理，适合工业界落地的实践方案
-- [2016]. [node2vec: Scalable Feature Learning for Networks](https://arxiv.org/abs/1607.00653)
-  - 简介：节点向量表示的一种方法，在推荐系统中的每一个item，都可以通过用户行为转换成图的表示，通过node2vec的方法，学习到图中每一个节点的向量表示，从而能够通过向量的距离度量不同节点之间的相似度
 - [2016]. [Deep Neural Networks for YouTube Recommendations](https://www.researchgate.net/publication/307573656_Deep_Neural_Networks_for_YouTube_Recommendations)
   - 简介：经典的深度学习方案在YouTube上的实践，同时包含深度学习在召回和排序过程中的应用，非常值得学习
 - [2016]. [Wide & Deep Learning for Recommender Systems](https://arxiv.org/abs/1606.07792)
