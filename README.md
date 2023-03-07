@@ -162,7 +162,7 @@
 - [2020]. [Privileged Features Distillation at Taobao Recommendations](https://arxiv.org/pdf/1907.05171.pdf)
   - 简介：在实际的工作中经常需要处理训练和预测时特征不一致的问题，比如某些特征，在训练的时候能够获得，但是在预测的时候不便获得，且该特征对于模型有很正向的作用，文中提出使用蒸馏的方式，即：privileged features distillation（PFD），在Teacher模型中包含了这类privileged features，但在student模型中不再包含这类特征。
 - [2020]. [Deep Match to Rank Model for Personalized Click-Through Rate Prediction](https://ojs.aaai.org//index.php/AAAI/article/view/5346)
-  - 简介：在CTR建模中考虑CF的思想，提出**Deep Match to Rank（DMR）**模型，从而实现对user和item之间的相关性建模。为实现对相关性建模，在网络中引入了User-to-Item子网络和Item-to-Item子网络。
+  - 简介：在CTR建模中考虑CF的思想，提出**DMR**（Deep Match to Rank）模型，从而实现对user和item之间的相关性建模。为实现对相关性建模，在网络中引入了User-to-Item子网络和Item-to-Item子网络。
 - [2021]. Self-Supervised Learning on Users' Spontaneous Behaviors for Multi-Scenario Ranking in E-commerce
 - [2021]. (CIKM2021 Best Paper)[SAR-Net: A Scenario-Aware Ranking Network for Personalized Fair Recommendation in Hundreds of Travel Scenarios](https://arxiv.org/abs/2110.06475)
 - [2022]. (CIKM2022 Best Paper)[Real-time Short Video Recommendation on Mobile Devices](https://arxiv.org/pdf/2208.09577.pdf)
