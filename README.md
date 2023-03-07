@@ -30,6 +30,8 @@
 - [2017]. [Use of Deep Learning in Modern Recommendation System : A Summary of Recent Works](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Reference/Review/Use%20of%20Deep%20Learning%20in%20Modern%20Recommendation%20System%20A%20Summary%20of%20Recent%20Works.pdf)
 - [2020]. [从零开始了解推荐系统全貌](https://zhuanlan.zhihu.com/p/259985388)
   - 简介：介绍了推荐系统的多个方面，包括用户画像，召回排序算法及策略，比较全面，适合初学者了解推荐系统的全貌
+- [2022]. [Graph Neural Networks in Recommender Systems: A Survey](https://arxiv.org/abs/2011.02260)
+  - 简介：图神经网络在推荐系统中的应用
 
 # 2. 召回、粗排、精排和重排算法以及策略
 ## 2.1. 召回
@@ -150,13 +152,17 @@
   - 简介：通常处理特征交叉是通过Hadamard product和inner product，很少关注交叉特征的重要性，在FiBiNET中，改进特征的交叉方式以及增加特征重要行的学习，分别通过**SENET**机制动态学习特征的重要性，通过**bilinear**函数学习特征的交叉
 - [2019]. [AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks](https://arxiv.org/pdf/1810.11921.pdf)
 - [2019]. [BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer](https://arxiv.org/pdf/1904.06690.pdf)
+- [2019]. [Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction](https://arxiv.org/pdf/1905.09248.pdf)
+  - 简介：用户兴趣的挖掘能够显著提升CTR预估，但随着用户行为序列的变长，一方面带来了线上的latency和storage cost上涨，同时随着长度变长，相应的模型需要相应的优化。针对上述两个方面，文中提出两个方面的优化：第一，工程方面，主要针对线上serving system的设计优化，将资源消耗最大的用户兴趣建模功能单独解构出来，设计成一个单独的模块UIC（User Interest Center）。同时，UIC维护了一个用户最新的兴趣信息，是实时更新的。第二，算法方面，提出基于memory network的**MIMN（Multi-channel user Interest Memory Network）**算法模型。
 - [2020]. [Controllable Multi-Interest Framework for Recommendation](https://arxiv.org/abs/2005.09347)
 - [2020]. [FuxiCTR: An Open Benchmark for Click-Through Rate Prediction](https://arxiv.org/abs/2009.05794)
-  - 简介：对多种CTR模型的对比，包括浅层模型和深度模型，浅层模型包括LR，FM，FFM等，深度模型包括DNN，Wide&Deep，PNN等
+  - 简介：【综述】对多种CTR模型的对比，包括浅层模型和深度模型，浅层模型包括LR，FM，FFM等，深度模型包括DNN，Wide&Deep，PNN等
 - [2020]. Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction
 - [2020]. [Category-Specific CNN for Visual-aware CTR Prediction at JD. com]
 - [2020]. [Privileged Features Distillation at Taobao Recommendations](https://arxiv.org/pdf/1907.05171.pdf)
   - 简介：在实际的工作中经常需要处理训练和预测时特征不一致的问题，比如某些特征，在训练的时候能够获得，但是在预测的时候不便获得，且该特征对于模型有很正向的作用，文中提出使用蒸馏的方式，即：privileged features distillation（PFD），在Teacher模型中包含了这类privileged features，但在student模型中不再包含这类特征。
+- [2020]. [Deep Match to Rank Model for Personalized Click-Through Rate Prediction](https://ojs.aaai.org//index.php/AAAI/article/view/5346)
+  - 简介：在CTR建模中考虑CF的思想，提出**Deep Match to Rank（DMR）**模型，从而实现对user和item之间的相关性建模。为实现对相关性建模，在网络中引入了User-to-Item子网络和Item-to-Item子网络。
 - [2021]. Self-Supervised Learning on Users' Spontaneous Behaviors for Multi-Scenario Ranking in E-commerce
 - [2021]. (CIKM2021 Best Paper)[SAR-Net: A Scenario-Aware Ranking Network for Personalized Fair Recommendation in Hundreds of Travel Scenarios](https://arxiv.org/abs/2110.06475)
 - [2022]. (CIKM2022 Best Paper)[Real-time Short Video Recommendation on Mobile Devices](https://arxiv.org/pdf/2208.09577.pdf)
