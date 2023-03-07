@@ -153,7 +153,7 @@
 - [2019]. [AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks](https://arxiv.org/pdf/1810.11921.pdf)
 - [2019]. [BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer](https://arxiv.org/pdf/1904.06690.pdf)
 - [2019]. [Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction](https://arxiv.org/pdf/1905.09248.pdf)
-  - 简介：用户兴趣的挖掘能够显著提升CTR预估，但随着用户行为序列的变长，一方面带来了线上的latency和storage cost上涨，同时随着长度变长，相应的模型需要相应的优化。针对上述两个方面，文中提出两个方面的优化：第一，工程方面，主要针对线上serving system的设计优化，将资源消耗最大的用户兴趣建模功能单独解构出来，设计成一个单独的模块UIC（User Interest Center）。同时，UIC维护了一个用户最新的兴趣信息，是实时更新的。第二，算法方面，提出基于memory network的**MIMN（Multi-channel user Interest Memory Network）**算法模型。
+  - 简介：用户兴趣的挖掘能够显著提升CTR预估，但随着用户行为序列的变长，一方面带来了线上的latency和storage cost上涨，同时随着长度变长，相应的模型需要相应的优化。针对上述两个方面，文中提出两个方面的优化：第一，工程方面，主要针对线上serving system的设计优化，将资源消耗最大的用户兴趣建模功能单独解构出来，设计成一个单独的模块UIC（User Interest Center）。同时，UIC维护了一个用户最新的兴趣信息，是实时更新的。第二，算法方面，提出基于memory network的**MIMN**（Multi-channel user Interest Memory Network）算法模型。
 - [2020]. [Controllable Multi-Interest Framework for Recommendation](https://arxiv.org/abs/2005.09347)
 - [2020]. [FuxiCTR: An Open Benchmark for Click-Through Rate Prediction](https://arxiv.org/abs/2009.05794)
   - 简介：【综述】对多种CTR模型的对比，包括浅层模型和深度模型，浅层模型包括LR，FM，FFM等，深度模型包括DNN，Wide&Deep，PNN等
