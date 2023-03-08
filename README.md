@@ -195,6 +195,14 @@
   - 简介：重排
 - [2022]. [Multi-Level Interaction Reranking with User Behavior History](https://arxiv.org/pdf/2204.09370.pdf)
 
+## 2.5. 推荐多样性
+- [2018]. [Fast Greedy MAP Inference for Determinantal Point Process to Improve Recommendation Diversity](https://arxiv.org/pdf/1709.05135.pdf)
+  - 简介：文中提出将最大化多样性问题转化为一个点行列式过程**DPP**（Determinantal Point Process），然后提出一种快速贪心算法来求解，从而降低时间复杂度
+- [2019]. [DPPNET: Approximating Determinantal Point Processes with Deep Networks](https://proceedings.neurips.cc/paper/2019/file/f2d887e01a80e813d9080038decbbabb-Paper.pdf)
+  - 简介：尝试使用DNN模拟DPP的输出
+- [2020]. [Personalized Re-ranking for Improving Diversity in Live Recommender Systems](https://arxiv.org/pdf/2004.06390.pdf)
+
+
 # 3. 基础模型
 ## 3.1. NLP
 - [2014]. [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882)
@@ -229,6 +237,11 @@
 - [2017]. [Visual Search at eBay](https://arxiv.org/pdf/1706.03154.pdf)
 - [2017]. [Visual Search at Pinterest](https://arxiv.org/pdf/1505.07647.pdf)
 - [2018]. [Visual Search at Alibaba](https://arxiv.org/pdf/2102.04674.pdf)
+
+## 5.2. Query理解
+
+## 5.3. Query推荐
+- [2018]. [RIN: Reformulation Inference Network for Context-AwareQuery Suggestion](https://jyunyu.csie.org/docs/pubs/cikm2018paper.pdf)
 
 # 6. 工业界解决方案
 - [深度召回模型在QQ看点推荐中的应用实践](https://cloud.tencent.com/developer/article/1400798)
