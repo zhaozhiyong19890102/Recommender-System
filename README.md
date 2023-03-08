@@ -196,8 +196,10 @@
   - 简介：文中提出**STAR**（the Star Topology Adaptive Recommender）模型，该模型包括两个部分，一部分是多场景共有的（centered network），另一部分是场景独有的（the domain-specific network）
 - [2021]. [SAR-Net: A Scenario-Aware Ranking Network for Personalized Fair Recommendation in Hundreds of Travel Scenarios](https://arxiv.org/pdf/2110.06475.pdf)
 - [2021]. [Personalized Transfer of User Preferences for Cross-domain Recommendation](https://arxiv.org/abs/2110.11154)
-- [2022]. [Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling](https://arxiv.org/abs/2201.06814)
+- [2022]. [Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling](https://arxiv.org/pdf/2201.06814.pdf)
+  - 简介：针对多场景对目标任务，文中提出**M2M**（multi-scenario multi-task meta learning）方法，在M2M中有三个重要部分，分别为meta unit（学习到不同场景间的关联），a meta attention module（获取到不同场景间的差异），a meta tower module（强化不同场景特征的表达能力） 
 - [2022]. [APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction](https://arxiv.org/abs/2203.16218)
+- [2023]. [PEPNet: Parameter and Embedding Personalized Network for Infusing with Personalized Prior Information](https://arxiv.org/pdf/2302.01115.pdf)
 
 ## 2.4. 重排
 - [2018]. [Learning a Deep Listwise Context Model for Ranking Refinement](https://arxiv.org/pdf/1804.05936.pdf)
