@@ -85,10 +85,12 @@
   - 简介：对召回的建模，首先，该召回模型是一个多目标的召回模型，两个目标分别为点击率和阅读时长，这两个目标之间存在一个先后次序，先有点击才有阅读时长，这点类似于ESMM中对CTR，CVR的建模。其次，召回模型使用的是双塔结构，双塔结构的建模通常是单目标的，因此使用蒸馏的方式，将两个目标合在一起对双塔召回蒸馏。文中设计了a distillation based multi-task learning approach，简称DMTL。（注意：这里并不是用精排模型蒸馏召回模型）
 - [2021]. [A Dual Augmented Two-tower Model for Online Large-scale Recommendation](https://dlp-kdd.github.io/assets/pdf/DLP-KDD_2021_paper_4.pdf)
   - 简介：在双塔召回中存在的问题有：第一，与排序模型不一样，在双塔模型底层缺乏信息的交互，事实证明交互信息对于模型效果有着很重要的作用；第二，双塔模型中也存在着类目数据的不平衡。在文章提出了Dual Augmented Two-tower Model（DAT）模型，力图从两个方面解决上述的问题，第一，引入增强向量，同时设计了一种自适应模拟机制AMM（Adaptive-Mimic Mechanism）来学习增强向量；第二，提出了类别对齐损失CAL（Category Alignment Loss）。
+- [2022]. [Adaptive Domain Interest Network for Multi-domain Recommendation](https://arxiv.org/pdf/2206.09672.pdf)
+  - 简介：这是一篇介绍在召回环节考虑多场景建模的文章，在文中提出**ADI**（Adaptive Domain Interest network）网络模型，在该模型中，通过shared networks和domain-specific networks学习到不同场景间的联系与差别，整体的框架还是一个双塔的框架。
 
 ## 2.2. 粗排
 - [2020]. [COLD: Towards the Next Generation of Pre-Ranking System](https://arxiv.org/abs/2007.16122v1)
-  - 简介：长期以来，粗排（pre-ranking）一直被认为是精排（ranking）的简化版本，这就导致系统会陷入局部最优，文中提出COLD同时优化粗排模型和计算效率
+  - 简介：长期以来，粗排（pre-ranking）一直被认为是精排（ranking）的简化版本，这就导致系统会陷入局部最优，文中提出COLD同时优化粗排模型和计算效率。
 
 ## 2.3. 精排
 ### 2.3.1. 建模方法
@@ -98,9 +100,9 @@
   - 简介：**FM**算法在CTR中的应用
 - [2010]. Fast Context-aware Recommendations with Factorization Machines
 - [2013]. Ad Click Prediction: a View from the Trenches
-  - 简介：针对CTR预估中的大规模计算问题，提出**FTRL在线优化算法**，算法的理论性较强，同时是非常适合实际落地的方案
+  - 简介：针对CTR预估中的大规模计算问题，提出**FTRL在线优化算法**，算法的理论性较强，同时是非常适合实际落地的方案。
 - [2014]. [Practical lessons from predicting clicks on ads at facebook](https://quinonero.net/Publications/predicting-clicks-facebook.pdf)
-  - 简介：经典的**GBDT+LR**的解决方案，用于CTR预估，GBDT用于特征的处理，适合工业界落地的实践方案
+  - 简介：经典的**GBDT+LR**的解决方案，用于CTR预估，GBDT用于特征的处理，适合工业界落地的实践方案。
 - [2016]. [Deep Neural Networks for YouTube Recommendations](https://www.researchgate.net/publication/307573656_Deep_Neural_Networks_for_YouTube_Recommendations)
   - 简介：经典的深度学习方案在YouTube上的实践，同时包含深度学习在召回和排序过程中的应用，非常值得学习
 - [2016]. [Wide & Deep Learning for Recommender Systems](https://arxiv.org/abs/1606.07792)
