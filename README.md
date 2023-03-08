@@ -189,6 +189,16 @@
   - 简介：多任务学习算法**Progressive Layered Extraction (PLE)**，是MMoE多任务学习模型的升级版本，
 - [2020]. Deep Multifaceted Transformers for Multi-objective Ranking in Large-Scale E-commerce Recommender Systems
 
+### 2.3.3. 多场景建模
+- [2020]. [Improving Multi-Scenario Learning to Rank in E-commerce by Exploiting Task Relationships in the Label Space](https://cs.nju.edu.cn/_upload/tpl/01/0c/268/template268/pdf/CIKM-2020-Li.pdf)
+  - 简介：文中针对多场景建模提出**HMoE**（Hybrid of implicit and explicit Mixture-of-Experts）算法，该算法类似于多任务建模中的MMoE算法，通过多个Expert结合gate网络实现对多场景的建模
+- [2021]. [One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction](https://arxiv.org/abs/2101.11427)
+  - 简介：文中提出**STAR**（the Star Topology Adaptive Recommender）模型，该模型包括两个部分，一部分是多场景共有的（centered network），另一部分是场景独有的（the domain-specific network）
+- [2021]. [SAR-Net: A Scenario-Aware Ranking Network for Personalized Fair Recommendation in Hundreds of Travel Scenarios](https://arxiv.org/pdf/2110.06475.pdf)
+- [2021]. [Personalized Transfer of User Preferences for Cross-domain Recommendation](https://arxiv.org/abs/2110.11154)
+- [2022]. [Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling](https://arxiv.org/abs/2201.06814)
+- [2022]. [APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction](https://arxiv.org/abs/2203.16218)
+
 ## 2.4. 重排
 - [2018]. [Learning a Deep Listwise Context Model for Ranking Refinement](https://arxiv.org/pdf/1804.05936.pdf)
 - [2019]. [Personalized Re-ranking for Recommendation](https://arxiv.org/pdf/1904.06813.pdf)
@@ -201,7 +211,6 @@
 - [2019]. [DPPNET: Approximating Determinantal Point Processes with Deep Networks](https://proceedings.neurips.cc/paper/2019/file/f2d887e01a80e813d9080038decbbabb-Paper.pdf)
   - 简介：尝试使用DNN模拟DPP的输出
 - [2020]. [Personalized Re-ranking for Improving Diversity in Live Recommender Systems](https://arxiv.org/pdf/2004.06390.pdf)
-
 
 # 3. 基础模型
 ## 3.1. NLP
