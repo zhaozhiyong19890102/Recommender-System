@@ -255,6 +255,7 @@
 
 ## 5.3. Query推荐
 - [2018]. [RIN: Reformulation Inference Network for Context-AwareQuery Suggestion](https://jyunyu.csie.org/docs/pubs/cikm2018paper.pdf)
+- [2021]. [Self-Supervised Learning on Users' Spontaneous Behaviors for Multi-Scenario Ranking in E-commerce](https://www.researchgate.net/publication/356247829_Self-Supervised_Learning_on_Users'_Spontaneous_Behaviors_for_Multi-Scenario_Ranking_in_E-commerce)
 
 # 6. 工业界解决方案
 - [深度召回模型在QQ看点推荐中的应用实践](https://cloud.tencent.com/developer/article/1400798)
