@@ -264,6 +264,10 @@
 - [2011]. [product quantization for nearest neighbor search](https://www.researchgate.net/publication/47815472_Product_Quantization_for_Nearest_Neighbor_Search/link/00b4953c9a4b399203000000/download)
   - 简介：乘积量化**PQ**（product quantization）是向量相似检索中的一种常用算法，在Faiss中也有具体的实现，具体可参见[**IndexPQ.h**](https://github.com/facebookresearch/faiss/blob/main/faiss/IndexPQ.h)
 
+## 5.5. 分布式训练
+- [2014]. [Scaling Distributed Machine Learning with the Parameter Server](https://www.cs.cmu.edu/~muli/file/parameter_server_osdi14.pdf)
+  - 简介：著名的参数服务器**PS**
+
 
 # 6. 工业界解决方案
 [Industrial_Solutions](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Industrial_Solutions.md)
