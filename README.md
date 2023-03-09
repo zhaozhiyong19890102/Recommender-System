@@ -70,7 +70,8 @@
   - 简介：【知乎】关于向量召回在搜索中的应用
 - [2020]. [Towards Personalized and Semantic Retrieval: An End-to-End Solution for E-commerce Search via Embedding Learning](http://arxiv.org/abs/2006.02282)
   - 简介：京东电商搜索关于个性化语义召回的文章，提出**DPSR**模型，用于解决两个方面的问题，第一是语义相关但非词匹配的召回问题，第二是个性化的召回
-- [2020]. Deep Retrieval: An End-to-End Learnable Structure Model for Large-Scale Recommendations 
+- [2020]. [Deep Retrieval: An End-to-End Learnable Structure Model for Large-Scale Recommendations](https://arxiv.org/pdf/2007.07203v1.pdf)
+  - 简介：字节提出在双塔这种两阶段的召回过程中是有损失的，在文中提出使用DNN实现召回
 - [2020]. [Embedding-based Retrieval in Facebook Search](https://arxiv.org/abs/2006.11632)
   - 简介：Facebook搜索中充分利用用户的上下文信息训练向量召回模型为用户提供相关的结果
   - 阅读笔记：[Facebook搜索的向量搜索](http://120.53.236.240/Articles/article/34)
