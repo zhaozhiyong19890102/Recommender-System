@@ -208,6 +208,9 @@
 - [2019]. [Personalized Re-ranking for Recommendation](https://arxiv.org/pdf/1904.06813.pdf)
   - 简介：重排
 - [2022]. [Multi-Level Interaction Reranking with User Behavior History](https://arxiv.org/pdf/2204.09370.pdf)
+- [2022]. [Neural Re-ranking in Multi-stage Recommender Systems: A Review](https://arxiv.org/pdf/2202.06602.pdf)
+  - 简介：重排的综述
+- [2022]. [Scope-aware Re-ranking with Gated Attention in Feed]()
 
 ## 2.5. 推荐多样性
 - [2018]. [Fast Greedy MAP Inference for Determinantal Point Process to Improve Recommendation Diversity](https://arxiv.org/pdf/1709.05135.pdf)
@@ -256,6 +259,10 @@
 ## 5.3. Query推荐
 - [2018]. [RIN: Reformulation Inference Network for Context-AwareQuery Suggestion](https://jyunyu.csie.org/docs/pubs/cikm2018paper.pdf)
 - [2021]. [Self-Supervised Learning on Users' Spontaneous Behaviors for Multi-Scenario Ranking in E-commerce](https://www.researchgate.net/publication/356247829_Self-Supervised_Learning_on_Users'_Spontaneous_Behaviors_for_Multi-Scenario_Ranking_in_E-commerce)
+
+## 5.4. 向量的近似近邻检索
+- [2011]. [product quantization for nearest neighbor search](https://www.researchgate.net/publication/47815472_Product_Quantization_for_Nearest_Neighbor_Search/link/00b4953c9a4b399203000000/download)
+  - 简介：乘积量化**PQ**（product quantization）是向量相似检索中的一种常用算法，在Faiss中也有具体的实现，具体可参见[**IndexPQ.h**](https://github.com/facebookresearch/faiss/blob/main/faiss/IndexPQ.h)
 
 # 6. 工业界解决方案
 - [深度召回模型在QQ看点推荐中的应用实践](https://cloud.tencent.com/developer/article/1400798)
