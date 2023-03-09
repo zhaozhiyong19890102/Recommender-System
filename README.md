@@ -263,3 +263,7 @@
 ## 5.4. 向量的近似近邻检索
 - [2011]. [product quantization for nearest neighbor search](https://www.researchgate.net/publication/47815472_Product_Quantization_for_Nearest_Neighbor_Search/link/00b4953c9a4b399203000000/download)
   - 简介：乘积量化**PQ**（product quantization）是向量相似检索中的一种常用算法，在Faiss中也有具体的实现，具体可参见[**IndexPQ.h**](https://github.com/facebookresearch/faiss/blob/main/faiss/IndexPQ.h)
+
+
+# 6. 工业界解决方案
+[Industrial_Solutions](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Industrial_Solutions.md)
