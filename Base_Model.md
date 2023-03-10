@@ -1,4 +1,5 @@
 # 3. 基础模型
+在搜索，推荐，广告中涉及到模型的优化，通常会运用NLP，CV中的一些方法，同时，NLP以及CV中的一些方法在内容结构化方面有着重要的作用。
 ## 3.1. NLP
 - [2014]. [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882)
   - 简介：CNN模型解决文本分类的问题
