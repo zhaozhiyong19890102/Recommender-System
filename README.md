@@ -42,7 +42,7 @@
   - 阅读笔记：[深度语义模型DSSM](http://felixzhao.cn/Articles/article/4)
 - [2014]. [DeepWalk: Online Learning of Social Representations](https://arxiv.org/pdf/1403.6652.pdf)
 - [2015]. [LINE: Large-scale Information Network Embedding](https://arxiv.org/pdf/1503.03578.pdf)
-- [2016]. [Deep Neural Networks for YouTube Recommendations](https://www.researchgate.net/publication/307573656_Deep_Neural_Networks_for_YouTube_Recommendations)
+- [2016]. [Deep Neural Networks for YouTube Recommendations](https://dl.acm.org/doi/pdf/10.1145/2959100.2959190)
   - 简介：经典的深度学习方案在YouTube上的实践，同时包含深度学习在召回和排序过程中的应用，非常值得学习
   - 阅读笔记：[Youtube的DeepMatch模型](http://felixzhao.cn/Articles/article/15)
 - [2016]. [node2vec: Scalable Feature Learning for Networks](https://arxiv.org/pdf/1607.00653.pdf)
@@ -53,7 +53,7 @@
 - [2018]. [Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1803.02349)
   - 简介：阿里提出的基于Graph Embedding的item的Embedding方案，相比传统的node2vec，通过增加side information解决冷启动的问题
   - 阅读笔记：[基于Graph Embedding的GES和EGES](http://felixzhao.cn/Articles/article/8)
-- [2019]. [MOBIUS: Towards the Next Generation of Query-Ad Matching in Baidu's Sponsored Search](https://dl.acm.org/doi/abs/10.1145/3292500.3330651)
+- [2019]. [MOBIUS: Towards the Next Generation of Query-Ad Matching in Baidu's Sponsored Search](http://research.baidu.com/Public/uploads/5d12eca098d40.pdf)
   - 简介：对于搜索中的召回来说，召回的相关性以及召回的效率（如点击率或者转化率）都重要，文中提出在以效率为目标的前提下训练召回模型，为防止相关性漂移，在训练的过程中以相关性作为teacher进行active learning
 - [2019]. [Deep Semantic Matching for Amazon Product Search](https://wsdm2019-dapa.github.io/slides/05-YiweiSong.pdf)
 - [2019]. [SDM:Sequential Deep Matching Model for Online Large-scale Recommender System](https://arxiv.org/pdf/1909.00385.pdf)
@@ -67,7 +67,7 @@
 - [2020]. [A Comparison of Supervised Learning to Match Methods for Product Search](https://arxiv.org/abs/2007.10296)
   - 简介：商品搜索中多种Learning to Match方法的对比
 - [2020]. [Beyond Lexical:A semantic Retrieval Framework for Textual Search Engine](https://arxiv.org/abs/2008.03917)
-  - 简介：【知乎】关于向量召回在搜索中的应用
+  - 简介：【知乎】关于向量召回在搜索中的应用，这样直接使用BERT作为文本语义模型并不见得会有好的效果
 - [2020]. [Towards Personalized and Semantic Retrieval: An End-to-End Solution for E-commerce Search via Embedding Learning](http://arxiv.org/abs/2006.02282)
   - 简介：京东电商搜索关于个性化语义召回的文章，提出**DPSR**模型，用于解决两个方面的问题，第一是语义相关但非词匹配的召回问题，第二是个性化的召回
 - [2020]. [Deep Retrieval: An End-to-End Learnable Structure Model for Large-Scale Recommendations](https://arxiv.org/pdf/2007.07203v1.pdf)
@@ -203,6 +203,11 @@
   - 简介：针对多场景对目标任务，文中提出**M2M**（multi-scenario multi-task meta learning）方法，在M2M中有三个重要部分，分别为meta unit（学习到不同场景间的关联），a meta attention module（获取到不同场景间的差异），a meta tower module（强化不同场景特征的表达能力） 
 - [2022]. [APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction](https://arxiv.org/abs/2203.16218)
 - [2023]. [PEPNet: Parameter and Embedding Personalized Network for Infusing with Personalized Prior Information](https://arxiv.org/pdf/2302.01115.pdf)
+
+### 2.3.4. CVR的延迟建模
+- [2014]. [Modeling Delayed Feedback in Display Advertising](http://www0.cs.ucl.ac.uk/staff/w.zhang/rtb-papers/delayed-feedback.pdf)
+- [2018]. [A Nonparametric Delayed Feedback Model for Conversion Rate Prediction](https://arxiv.org/abs/1802.00255)
+- [2019]. [Addressing Delayed Feedback for Continuous Training with Neural Networks in CTR prediction](https://arxiv.org/abs/1907.06558)
 
 ## 2.4. 重排
 - [2018]. [Learning a Deep Listwise Context Model for Ranking Refinement](https://arxiv.org/pdf/1804.05936.pdf)
