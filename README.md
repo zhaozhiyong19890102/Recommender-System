@@ -161,7 +161,7 @@
 - [2020]. [FuxiCTR: An Open Benchmark for Click-Through Rate Prediction](https://arxiv.org/abs/2009.05794)
   - 简介：【综述】对多种CTR模型的对比，包括浅层模型和深度模型，浅层模型包括LR，FM，FFM等，深度模型包括DNN，Wide&Deep，PNN等
 - [2020]. Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction
-- [2020]. [Category-Specific CNN for Visual-aware CTR Prediction at JD. com]
+- [2020]. [Category-Specific CNN for Visual-aware CTR Prediction at JD. com](https://dl.acm.org/doi/pdf/10.1145/3394486.3403319)
 - [2020]. [Privileged Features Distillation at Taobao Recommendations](https://arxiv.org/pdf/1907.05171.pdf)
   - 简介：在实际的工作中经常需要处理训练和预测时特征不一致的问题，比如某些特征，在训练的时候能够获得，但是在预测的时候不便获得，且该特征对于模型有很正向的作用，文中提出使用蒸馏的方式，即：privileged features distillation（PFD），在Teacher模型中包含了这类privileged features，但在student模型中不再包含这类特征。
 - [2020]. [Deep Match to Rank Model for Personalized Click-Through Rate Prediction](https://ojs.aaai.org//index.php/AAAI/article/view/5346)
@@ -170,6 +170,8 @@
 - [2021]. (CIKM2021 Best Paper)[SAR-Net: A Scenario-Aware Ranking Network for Personalized Fair Recommendation in Hundreds of Travel Scenarios](https://arxiv.org/abs/2110.06475)
 - [2022]. (CIKM2022 Best Paper)[Real-time Short Video Recommendation on Mobile Devices](https://arxiv.org/pdf/2208.09577.pdf)
 - [2022]. [AdaSparse: Learning Adaptively Sparse Structures for Multi-Domain Click-Through Rate Prediction](https://arxiv.org/pdf/2206.13108.pdf)
+- [2023]. [Decision-Making Context Interaction Network for Click-Through Rate Prediction](https://arxiv.org/pdf/2301.12402.pdf)
+  - 简介：在CTR建模过程中对用户历史行为的建模，通常也只是考虑历史互动过的item，而未考虑这些item的上下文环境，文中提出**DCIN**（Decision-Making Context Interaction Network）网络，该网络中融合了**CIU**（Context Interaction Unit）以及**AIAU**（Adaptive Interest Aggregation Unit） 
 
 ### 2.3.1. position-bias
 - [2019]. [Recommending What Video to Watch Next: A Multitask Ranking System](https://dl.acm.org/doi/10.1145/3298689.3346997)
@@ -224,6 +226,10 @@
 - [2019]. [DPPNET: Approximating Determinantal Point Processes with Deep Networks](https://proceedings.neurips.cc/paper/2019/file/f2d887e01a80e813d9080038decbbabb-Paper.pdf)
   - 简介：尝试使用DNN模拟DPP的输出
 - [2020]. [Personalized Re-ranking for Improving Diversity in Live Recommender Systems](https://arxiv.org/pdf/2004.06390.pdf)
+
+## 2.6. 性能优化
+- [2023]. [Adaptive Low-Precision Training for Embeddings in Click-Through Rate Prediction](https://arxiv.org/pdf/2212.05735.pdf)
+  - 简介：在现如今的CTR模型建模过程中，模型越来越大，这也导致了存储与推理效率两个方面的问题，在模型中，embedding table占据的空间越来越大，文章围绕如何在训练的过程中对embedding table进行压缩提出了**ALPT**（adaptive low-precision training）方法，试图在训练阶段压缩embedding table
 
 # 3. 基础模型
 [Base_Model](https://github.com/zhaozhiyong19890102/Recommender-System/blob/master/Base_Model.md)
