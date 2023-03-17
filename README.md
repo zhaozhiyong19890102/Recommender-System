@@ -92,6 +92,7 @@
 ## 2.2. 粗排
 - [2020]. [COLD: Towards the Next Generation of Pre-Ranking System](https://arxiv.org/abs/2007.16122v1)
   - 简介：长期以来，粗排（pre-ranking）一直被认为是精排（ranking）的简化版本，这就导致系统会陷入局部最优，文中提出COLD同时优化粗排模型和计算效率。
+- [2021]. [Towards a Better Tradeoff between Effectiveness and Efficiency in Pre-Ranking: A Learnable Feature Selection based Approach](https://arxiv.org/pdf/2105.07706.pdf)
 
 ## 2.3. 精排
 ### 2.3.1. 建模方法
