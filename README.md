@@ -178,9 +178,8 @@
 - [2019]. [Recommending What Video to Watch Next: A Multitask Ranking System](https://dl.acm.org/doi/10.1145/3298689.3346997)
   - 简介：针对样本选择时的position-bias问题，文章中提出额外使用shallow tower对position建模
 - [2019]. [PAL: A Position-bias Aware Learning Framework for CTR Prediction in Live Recommender Systems](https://www.researchgate.net/publication/335771749_PAL_a_position-bias_aware_learning_framework_for_CTR_prediction_in_live_recommender_systems)
-- [2020]. Bias and Debias in Recommender System: A Survey and Future Directions
+- [2021]. [Bias and Debias in Recommender System: A Survey and Future Directions](https://arxiv.org/pdf/2010.03240.pdf)
 - [2021]. [Deep Position-wise Interaction Network for CTR Prediction](https://arxiv.org/pdf/2106.05482.pdf)
-  - 简介：
 
 ### 2.3.2. 多任务建模
 - [2018]. [Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate](https://arxiv.org/pdf/1804.07931.pdf)
