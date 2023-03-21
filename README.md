@@ -244,6 +244,11 @@
 - [2018]. [Visual Search at Alibaba](https://arxiv.org/pdf/2102.04674.pdf)
 
 ## 5.2. Query理解
+### 5.2.1. Query扩展
+- [2007]. [Keyword Generation for Search Engine Advertising Using Semantic Similarity between Terms](https://www.site.uottawa.ca/~nelkadri/CSI5389/Papers/86-Keyword%20Generation%20for%20Search%20Engine%20Advertising.pdf)
+- [2009]. [ Online Expansion of Rare Queries for Sponsored Search](https://gabrilovich.com/publications/papers/Broder2009OER.pdf)
+- [2018]. Scalable Query N-Gram Embedding for Improving Matching and Relevance in Sponsored Search
+
 
 ## 5.3. Query推荐
 - [2018]. [RIN: Reformulation Inference Network for Context-AwareQuery Suggestion](https://jyunyu.csie.org/docs/pubs/cikm2018paper.pdf)
