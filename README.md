@@ -55,6 +55,7 @@
   - 阅读笔记：[基于Graph Embedding的GES和EGES](http://felixzhao.cn/Articles/article/8)
 - [2019]. [MOBIUS: Towards the Next Generation of Query-Ad Matching in Baidu's Sponsored Search](http://research.baidu.com/Public/uploads/5d12eca098d40.pdf)
   - 简介：对于搜索中的召回来说，召回的相关性以及召回的效率（如点击率或者转化率）都重要，文中提出在以效率为目标的前提下训练召回模型，为防止相关性漂移，在训练的过程中以相关性作为teacher进行active learning
+  - 阅读笔记：[百度双塔召回引擎MOBIUS](http://felixzhao.cn/Articles/article/57)
 - [2019]. [Deep Semantic Matching for Amazon Product Search](https://wsdm2019-dapa.github.io/slides/05-YiweiSong.pdf)
 - [2019]. [SDM:Sequential Deep Matching Model for Online Large-scale Recommender System](https://arxiv.org/pdf/1909.00385.pdf)
   - 简介：分别对用户长期和短期兴趣建模，学习到用户的长期兴趣和短期兴趣
